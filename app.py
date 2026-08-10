@@ -123,10 +123,10 @@ fig_a = px.strip(
     y="Region", 
     color="Region",
     hover_name="Country",
-    text="Display_Label",
+    #text="Display_Label",
     stripmode="overlay"
 )
-fig_a.update_traces(marker=dict(size=10, opacity=0.8, line=dict(width=1, color='DarkSlateGrey')))
+fig_a.update_traces(marker=dict(size=10, opacity=0.8, line=dict(width=1, color='DarkSlateGrey')),text=df["Display_Label"],textposition="middle right")
 fig_a.update_layout(xaxis_title="", yaxis_title="")
 st.plotly_chart(fig_a, use_container_width=True)
 
@@ -149,7 +149,7 @@ fig_b = px.scatter(
     y="jitter_y", 
     color="KPIs-R",
     hover_name="Country",
-    text="Display_Label",
+    text="",
     category_orders={"Classification": tier_order}
 )
 fig_b.update_traces(marker=dict(size=12, opacity=0.8, line=dict(width=1, color='White')), textposition='top center')
@@ -174,7 +174,7 @@ fig_c = px.scatter(
     size="KPIs-PC_plot", 
     color="Region",
     hover_name="Country",
-    text="Display_Label",
+    text="",
     category_orders={"Classification": tier_order},
     size_max=50 # Adjust max bubble size here
 )
