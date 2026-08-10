@@ -123,8 +123,36 @@ region_mapping = {region: i for i, region in enumerate(unique_regions)}
 df["Region_Num"] = df["Region"].map(region_mapping)
 
 # Apply wide uniform horizontal jitter (spreads dots along the X axis) and tight normal vertical jitter
-df["PlotA_X"] = df["Tier_Num"] + np.random.uniform(-0.35, 0.35, len(df))
-df["PlotA_Y"] = df["Region_Num"] + np.random.normal(0, 0.05, len(df))
+df["Tier_Num"] = df["Tier_Num"].astype(float)
+# df["PlotA_X"] = df["Tier_Num"] + np.random.uniform(-0.35, 0.35, len(df))
+# df["PlotA_Y"] = df["Region_Num"] + np.random.normal(0, 0.05, len(df))
+tier_min = df.groupby("Tier_Num")["Score"].transform("min")
+tier_max = df.groupby("Tier_Num")["Score"].transform("max")
+score_range = tier_max - tier_min
+score_range = score_range.replace(0, 1) # Prevent division by zero if all scores are identical
+# Normalize scores from 0 to 1 (1 being the highest score in that tier)
+norm_score = (df["Score"] - tier_min) / score_range
+# Map horizontal (X) spacing: Highest score goes to the left (-0.35 offset), lowest to the right (+0.35 offset)
+df["PlotA_X"] = df["Tier_Num"] - 0.35 + (1 - norm_score) * 0.70
+# Apply improved vertical (Y) jitter to fan them out and prevent identical scores from stacking
+df["PlotA_Y"] = df["Region_Num"] + np.random.normal(0, 0.12, len(df))
+
+# --- NEW: JITTER & BASE COLORS FOR PLOTS B & C ---
+# Create lateral (X) and vertical (Y) normal distributions for the diamond/violin shapes
+df["PlotBC_X"] = df["Tier_Num"] + np.random.normal(0, 0.16, len(df))
+# df["PlotBC_Y"] = np.random.normal(0, 0.25, len(df))
+# df["PlotBC_Y"] = df["Score"]
+tier_mean = df.groupby("Tier_Num")["Score"].transform("mean")
+df["PlotBC_Y"] = df["Score"] - tier_mean
+
+# Strip + and - for Plot B base colors and map to full descriptive names for the legend
+pol_mapping = {
+    "LD": "LD - Liberal Democracy",
+    "ED": "ED - Electoral Democracy",
+    "EA": "EA - Electoral Autocracy",
+    "CA": "CA - Closed Autocracy"
+}
+df["KPIs-R_base"] = df["KPIs-R"].astype(str).str.replace(r'[\+\-]', '', regex=True).map(pol_mapping)
 
 # --- 4. MAIN PAGE & CHARTS ---
 st.title("🌍 AI Nation Power Rankings")
@@ -141,9 +169,16 @@ fig_a = px.scatter(
     y="PlotA_Y", 
     color="Region",
     hover_name="Country",
-    hover_data={"PlotA_X": False, "PlotA_Y": False, "Classification": True}
+    text="Display_Label",
+    # hover_data={"Region": False, "PlotA_X": False, "PlotA_Y": False, "Classification": True, "Score": ":.2f"}
+    custom_data=["Region", "Classification", "Score"]
 )
-fig_a.update_traces(marker=dict(size=10, opacity=0.8, line=dict(width=1, color='DarkSlateGrey')))
+fig_a.update_traces(
+    marker=dict(size=10, opacity=0.8, line=dict(width=1, color='DarkSlateGrey')),
+    textposition='top center',
+    textfont=dict(size=10, color='Gray'),
+    hovertemplate="<b>%{hovertext}</b><br>%{customdata[0]}<br>%{customdata[1]}<br>Score: %{customdata[2]:.2f}<extra></extra>" 
+)
 fig_a.update_layout(
     xaxis_title="", 
     yaxis_title="",
@@ -151,7 +186,7 @@ fig_a.update_layout(
     xaxis=dict(
         tickmode='array',
         tickvals=[1, 2, 3],
-        ticktext=["Core AI Nation", "Semi-Periphery AI Nation", "Periphery AI Nation"],
+        ticktext=["Core AI Nations", "Semi-Periphery AI Nations", "Periphery AI Nations"],
         showgrid=False
     ),
     yaxis=dict(
@@ -162,7 +197,8 @@ fig_a.update_layout(
         zeroline=False
     )
 )
-st.plotly_chart(fig_a, use_container_width=True)
+fig_a.add_vrect(x0=1.5, x1=2.5, fillcolor="#FDFD96", opacity=0.05, layer="below", line_width=0)
+st.plotly_chart(fig_a, width='stretch')
 
 st.divider()
 
@@ -179,20 +215,42 @@ df_b = df.dropna(subset=["KPIs-R"]).copy()
 
 fig_b = px.scatter(
     df_b, 
-    x="Classification", 
-    y="jitter_y", 
-    color="KPIs-R",
+    x="PlotBC_X", 
+    y="PlotBC_Y", 
+    color="KPIs-R_base",
+    size="Score",  # NEW: Size dots proportionally to Score
     hover_name="Country",
-    category_orders={"Classification": tier_order}
+    # hover_data={"PlotBC_X": False, "PlotBC_Y": False, "Classification": True, "KPIs-R": True, "Score": ":.2f"},
+    custom_data=["KPIs-R_base","KPIs-R", "Classification", "Score"],
+    category_orders={"KPIs-R_base": [
+        "LD - Liberal Democracy", 
+        "ED - Electoral Democracy", 
+        "EA - Electoral Autocracy", 
+        "CA - Closed Autocracy"
+    ]},
+    color_discrete_sequence=px.colors.qualitative.Set3,
+    size_max=25 # Adjust max bubble size for Plot B
 )
-fig_b.update_traces(marker=dict(size=12, opacity=0.8, line=dict(width=1, color='White')), textposition='top center')
+fig_b.update_traces(
+    marker=dict(opacity=0.8, line=dict(width=1, color='White')), 
+    textposition='top center',
+    hovertemplate="<b>%{hovertext}</b><br>%{customdata[0]}<br>Raw class: %{customdata[1]}<br>Rank: %{customdata[2]}<br>Score: %{customdata[3]:.2f}<extra></extra>"
+)
 fig_b.update_layout(
-    xaxis_title="",
-    yaxis=dict(visible=False),  # Hide Y axis
+    xaxis_title="", 
+    yaxis_title="",
+    xaxis=dict(
+        tickmode='array',
+        tickvals=[1, 2, 3],
+        ticktext=["Core AI Nations", "Semi-Periphery AI Nations", "Periphery AI Nations"],
+        showgrid=False
+    ),
+    yaxis=dict(visible=False),  # Hide Y axis, but layout now reflects Score vertically
     showlegend=True,
     legend_title_text="Political Type"
 )
-st.plotly_chart(fig_b, use_container_width=True)
+fig_b.add_vrect(x0=1.5, x1=2.5, fillcolor="#FDFD96", opacity=0.05, layer="below", line_width=0)
+st.plotly_chart(fig_b, width='stretch')
 
 st.divider()
 
@@ -202,19 +260,34 @@ st.markdown("Bubble size represents the Power Concentration metric (`KPIs-PC`). 
 
 fig_c = px.scatter(
     df, 
-    x="Classification", 
-    y="jitter_y", 
+    x="PlotBC_X", 
+    y="PlotBC_Y", 
     size="KPIs-PC_plot", 
     color="Region",
     hover_name="Country",
-    category_orders={"Classification": tier_order},
+    # hover_data={"PlotBC_X": False, "PlotBC_Y": False, "Classification": True, "Score": ":.2f"},
+    custom_data=["Region", "Classification", "Score"],
+    color_discrete_sequence=px.colors.qualitative.Set2,
     size_max=50 # Adjust max bubble size here
 )
-fig_c.update_traces(marker=dict(opacity=0.7, line=dict(width=1, color='White')), textposition='top center')
+fig_c.update_traces(
+    marker=dict(opacity=0.7, line=dict(width=1, color='White')),
+    textposition='top center',
+    hovertemplate="<b>%{hovertext}</b><br>Region: %{customdata[0]}<br>Rank: %{customdata[1]}<br>Score: %{customdata[2]:.2f}<extra></extra>"
+)
 fig_c.update_layout(
-    xaxis_title="",
+    xaxis_title="", 
+    yaxis_title="",
+    height=700,
+    xaxis=dict(
+        tickmode='array',
+        tickvals=[1, 2, 3],
+        ticktext=["Core AI Nations", "Semi-Periphery AI Nations", "Periphery AI Nations"],
+        showgrid=False
+    ),
     yaxis=dict(visible=False), # Hide Y axis
     showlegend=True,
     legend_title_text="Region"
 )
+fig_c.add_vrect(x0=1.5, x1=2.5, fillcolor="#FDFD96", opacity=0.05, layer="below", line_width=0)
 st.plotly_chart(fig_c, use_container_width=True)
