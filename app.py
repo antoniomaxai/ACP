@@ -149,7 +149,7 @@ fig_b = px.scatter(
     y="jitter_y", 
     color="KPIs-R",
     hover_name="Country",
-    text="",
+    #text="",
     category_orders={"Classification": tier_order}
 )
 fig_b.update_traces(marker=dict(size=12, opacity=0.8, line=dict(width=1, color='White')), textposition='top center')
@@ -174,7 +174,7 @@ fig_c = px.scatter(
     size="KPIs-PC_plot", 
     color="Region",
     hover_name="Country",
-    text="",
+    #text="",
     category_orders={"Classification": tier_order},
     size_max=50 # Adjust max bubble size here
 )
