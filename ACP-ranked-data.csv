@@ -1,4 +1,4 @@
-Position,Country,Score,Classification,KPIs-PC,KPIs-R,Region,Label,Label text
+Position,Country,Score,Classification,KPIs-PC,KPIs-R,Region,ShowLabel,Label
 1,United States of America,89.04,Core AI Nation,0,ED+,North America,TRUE,USA
 2,China,77.14,Core AI Nation,24.7,CA,Indo-Pacific,TRUE,China
 3,France,69.94,Core AI Nation,0,LD-,Europe & Eurasia,TRUE,France
