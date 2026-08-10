@@ -20,7 +20,8 @@ def load_data():
     df["Display_Label"] = np.where(is_true, df["Label"].fillna(""), "")
     
     # Create Jitter for Y-axis (for plots B and C)
-    df["jitter_y"] = np.random.uniform(-1, 1, len(df))
+    # FIXED: Using a normal distribution (Gaussian) instead of uniform creates a center-heavy diamond shape
+    df["jitter_y"] = np.random.normal(0, 0.25, len(df))
     
     # Handle Power Concentration 0s and nulls
     df["KPIs-PC_plot"] = pd.to_numeric(df["KPIs-PC"], errors="coerce").fillna(0)
@@ -108,6 +109,13 @@ df["Classification"] = df["Position"].apply(assign_tier)
 tier_order = ["Core AI Nation", "Semi-Periphery AI Nation", "Periphery AI Nation"]
 df["Classification"] = pd.Categorical(df["Classification"], categories=tier_order, ordered=True)
 
+# --- Y-Axis Jitter Mapping for Plot A ---
+# Maps regions to integers and adds a normal distribution jitter to create diamond shapes without overlapping
+unique_regions = df["Region"].dropna().unique()
+region_mapping = {region: i for i, region in enumerate(unique_regions)}
+df["Region_Num"] = df["Region"].map(region_mapping)
+df["Region_Y_Jitter"] = df["Region_Num"] + np.random.normal(0, 0.12, len(df))
+
 # --- 4. MAIN PAGE & CHARTS ---
 st.title("🌍 AI Nation Power Rankings")
 st.markdown(f"**Total Nations Analyzed:** {N} | **Core:** {core_cutoff} | **Semi-Periphery:** {sp_cutoff - core_cutoff} | **Periphery:** {N - sp_cutoff}")
@@ -116,18 +124,28 @@ st.divider()
 
 # --- PLOT A: Regions ---
 st.subheader("A) Distribution by World Region")
-# Using strip plot which is perfect for categorical Y and X with horizontal jitter
-fig_a = px.strip(
+
+# FIXED: Switched to px.scatter to accept the mathematical Y-jitter, and added category_orders
+fig_a = px.scatter(
     df, 
     x="Classification", 
-    y="Region", 
+    y="Region_Y_Jitter", 
     color="Region",
     hover_name="Country",
-    #text="Display_Label",
-    stripmode="overlay"
+    category_orders={"Classification": tier_order} 
 )
 fig_a.update_traces(marker=dict(size=10, opacity=0.8, line=dict(width=1, color='DarkSlateGrey')))
-fig_a.update_layout(xaxis_title="", yaxis_title="")
+fig_a.update_layout(
+    xaxis_title="", 
+    yaxis_title="",
+    yaxis=dict(
+        tickmode='array',
+        tickvals=list(region_mapping.values()),
+        ticktext=list(region_mapping.keys()),
+        showgrid=True,
+        zeroline=False
+    )
+)
 st.plotly_chart(fig_a, use_container_width=True)
 
 st.divider()
@@ -149,7 +167,6 @@ fig_b = px.scatter(
     y="jitter_y", 
     color="KPIs-R",
     hover_name="Country",
-    #text="",
     category_orders={"Classification": tier_order}
 )
 fig_b.update_traces(marker=dict(size=12, opacity=0.8, line=dict(width=1, color='White')), textposition='top center')
@@ -174,7 +191,6 @@ fig_c = px.scatter(
     size="KPIs-PC_plot", 
     color="Region",
     hover_name="Country",
-    #text="",
     category_orders={"Classification": tier_order},
     size_max=50 # Adjust max bubble size here
 )
