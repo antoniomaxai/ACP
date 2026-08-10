@@ -125,19 +125,25 @@ st.divider()
 # --- PLOT A: Regions ---
 st.subheader("A) Distribution by World Region")
 
-# FIXED: Switched to px.scatter to accept the mathematical Y-jitter, and added category_orders
 fig_a = px.scatter(
     df, 
-    x="Classification", 
-    y="Region_Y_Jitter", 
+    x="PlotA_X", 
+    y="PlotA_Y", 
     color="Region",
     hover_name="Country",
-    category_orders={"Classification": tier_order} 
+    hover_data={"PlotA_X": False, "PlotA_Y": False, "Classification": True}
 )
 fig_a.update_traces(marker=dict(size=10, opacity=0.8, line=dict(width=1, color='DarkSlateGrey')))
 fig_a.update_layout(
     xaxis_title="", 
     yaxis_title="",
+    # Rebuild the categorical axes visually using our numerical mapping
+    xaxis=dict(
+        tickmode='array',
+        tickvals=[1, 2, 3],
+        ticktext=["Core AI Nation", "Semi-Periphery AI Nation", "Periphery AI Nation"],
+        showgrid=False
+    ),
     yaxis=dict(
         tickmode='array',
         tickvals=list(region_mapping.values()),
