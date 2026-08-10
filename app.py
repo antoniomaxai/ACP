@@ -111,10 +111,20 @@ df["Classification"] = pd.Categorical(df["Classification"], categories=tier_orde
 
 # --- Y-Axis Jitter Mapping for Plot A ---
 # Maps regions to integers and adds a normal distribution jitter to create diamond shapes without overlapping
+
+# --- MANUAL JITTER FOR PLOT A (Strip Plot Style) ---
+# Map Tiers to integers
+tier_mapping = {"Core AI Nation": 1, "Semi-Periphery AI Nation": 2, "Periphery AI Nation": 3}
+df["Tier_Num"] = df["Classification"].map(tier_mapping)
+
+# Map Regions to integers
 unique_regions = df["Region"].dropna().unique()
 region_mapping = {region: i for i, region in enumerate(unique_regions)}
 df["Region_Num"] = df["Region"].map(region_mapping)
-df["Region_Y_Jitter"] = df["Region_Num"] + np.random.normal(0, 0.12, len(df))
+
+# Apply wide uniform horizontal jitter (spreads dots along the X axis) and tight normal vertical jitter
+df["PlotA_X"] = df["Tier_Num"] + np.random.uniform(-0.35, 0.35, len(df))
+df["PlotA_Y"] = df["Region_Num"] + np.random.normal(0, 0.05, len(df))
 
 # --- 4. MAIN PAGE & CHARTS ---
 st.title("🌍 AI Nation Power Rankings")
