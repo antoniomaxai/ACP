@@ -126,7 +126,7 @@ fig_a = px.strip(
     #text="Display_Label",
     stripmode="overlay"
 )
-fig_a.update_traces(marker=dict(size=10, opacity=0.8, line=dict(width=1, color='DarkSlateGrey')),text=df["Display_Label"],textposition="middle right")
+fig_a.update_traces(marker=dict(size=10, opacity=0.8, line=dict(width=1, color='DarkSlateGrey'),text=df["Display_Label"],textposition="middle right")
 fig_a.update_layout(xaxis_title="", yaxis_title="")
 st.plotly_chart(fig_a, use_container_width=True)
 
