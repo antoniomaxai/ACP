@@ -3,10 +3,10 @@ import pandas as pd
 import plotly.express as px
 import numpy as np
 
-st.set_page_config(page_title="ACP AI Nation Rankings", layout="wide")
+st.set_page_config(page_title="ACP - Country Rankings", layout="wide")
 
 # --- 1. DATA LOADING ---
-@st.cache_data
+# @st.cache_data
 def load_data():
     df = pd.read_csv("ACP-ranked-data.csv")
     
@@ -36,10 +36,10 @@ st.sidebar.header("⚙️ Ranking Parameters")
 
 # A. Rank Classification Thresholds
 st.sidebar.subheader("Classification Thresholds")
-st.sidebar.write("Set the percentage cutoffs for each tier.")
+st.sidebar.write("Percentage cutoffs for primary tiers.")
 
-core_pct = st.sidebar.slider("Core (Top %)", min_value=1.0, max_value=20.0, value=4.5, step=0.1)
-sp_pct = st.sidebar.slider("Semi-Periphery (Up to %)", min_value=5.0, max_value=50.0, value=18.0, step=0.1)
+core_pct = st.sidebar.slider("Core (Top % - Default: 4.5)", min_value=2.0, max_value=20.0, value=4.5, step=0.5)
+sp_pct = st.sidebar.slider("Semi-Periphery (Up to % - Default: 18)", min_value=9.0, max_value=50.0, value=18.0, step=1.0)
 
 # B. Ranking Weights
 st.sidebar.subheader("Ranking Weights (%)")
@@ -155,13 +155,39 @@ pol_mapping = {
 df["KPIs-R_base"] = df["KPIs-R"].astype(str).str.replace(r'[\+\-]', '', regex=True).map(pol_mapping)
 
 # --- 4. MAIN PAGE & CHARTS ---
-st.title("🌍 AI Nation Power Rankings")
-st.markdown(f"**Total Nations Analyzed:** {N} | **Core:** {core_cutoff} | **Semi-Periphery:** {sp_cutoff - core_cutoff} | **Periphery:** {N - sp_cutoff}")
+st.title("AI Core-Periphery - Country Rankings")
+st.markdown(f"**Total Countries Analyzed:** `{N}` | **Core:** `{core_cutoff}` | **Semi-Periphery:** `{sp_cutoff - core_cutoff}` | **Periphery:** `{N - sp_cutoff}`")
+
+st.divider()
+
+# Creates 3 columns with a 1:2:1 ratio. The middle column takes up 50% of the space.
+col1, col2, col3 = st.columns([1, 2, 1]) 
+with col2:
+    st.image("ACP-33.png", use_container_width=True, caption="The AI Core–Periphery Framework")
+
+st.write("""
+This analysis applies Antonio Max’s [AI Core–Periphery (ACP) Framework](https://antoniomax.substack.com/p/techno-economic-protagonism-and-ai), an adaptation of Immanuel Wallerstein’s [world-systems theory](https://en.wikipedia.org/wiki/World-systems_theory) to the emerging political economy of artificial intelligence. The framework extends the core–periphery model to examine the techno-economic asymmetries that AI is consolidating among states, with particular attention to the distribution of AI capabilities, infrastructures, data, technological dependencies, and market power.
+
+At its core, the ACP Framework asks: *Where does each country sit within the global distribution of AI capability, data, and power?*
+    
+##### Key ACP Concepts:
+- **Core countries**: States possessing the strongest AI capabilities and the greatest capacity to develop, deploy, and shape AI systems, infrastructures, standards  and associated market rules (eg. establishing tokens as de facto economic accounting unit for generative-AI inference).
+- **Semi-periphery countries**: States with meaningful AI capabilities and/or capacity to participate in the AI economy, but with structural limitations relative to  the Core. They may function simultaneously as technology developers, adopters, partners, suppliers, and customers within Core-dominated AI ecosystems. Often geopolitical allies and Core intermediaries for Periphery countries.
+- **Periphery countries**: States with comparatively limited domestic AI capabilities and greater dependence on technologies, talent, infrastructure, capital and expertise from both Core and Semi-periphery countries. Predominantly AI customers and raw data suppliers, Periphery AI countries are higly path dependent on Core business models and their geopolitical doctrines.
+
+##### ACP Ranking:
+
+The ACP Ranking is derived from a customized weighted composite of Oxford Insights’ [Government AI Readiness Index (2025)](https://oxfordinsights.com/ai-readiness/government-ai-readiness-index-2025/). The original pillars and corresponding weights are provided in their [methodology report](https://oxfordinsights.com/wp-content/uploads/2026/05/Methodology-Report-2025-1.pdf) and reproduced on the sidebar.
+         
+The ACP weighting scheme modifies original weights to emphasize variables considered more directly indicative of structural AI capability. In particular, AI Infrastructure receives a substantially greater weight, while Public Sector Adoption and Policy Capacity are comparatively downweighted, treated as partially orthogonal to the core–periphery dimension being modeled.
+
+The resulting classification is therefore not intended to reproduce/modify Oxford Insights’ original ranking. Rather, it repurposes its underlying weights to construct an analytical measure of countries’ relative position within the emerging global political economy of AI.
+""")
 
 st.divider()
 
 # --- PLOT A: Regions ---
-st.subheader("A) Distribution by World Region")
+st.subheader("A) ACP Distribution by World Region")
 
 fig_a = px.scatter(
     df, 
@@ -186,7 +212,7 @@ fig_a.update_layout(
     xaxis=dict(
         tickmode='array',
         tickvals=[1, 2, 3],
-        ticktext=["Core AI Nations", "Semi-Periphery AI Nations", "Periphery AI Nations"],
+        ticktext=["Core AI Countries", "Semi-Periphery AI Countries", "Periphery AI Countries"],
         showgrid=False
     ),
     yaxis=dict(
@@ -197,17 +223,18 @@ fig_a.update_layout(
         zeroline=False
     )
 )
-fig_a.add_vrect(x0=1.5, x1=2.5, fillcolor="#FDFD96", opacity=0.05, layer="below", line_width=0)
+fig_a.add_vrect(x0=1.5, x1=2.5, fillcolor="#FDFD96", opacity=0.02, layer="below", line_width=0)
 st.plotly_chart(fig_a, width='stretch')
 
 st.divider()
 
 # --- PLOT B: Political Types ---
-st.subheader("B) Distribution by Political Type")
+st.subheader("B) ACP Distribution by Regime Type")
 st.markdown("""
-**Legend:** 
-**LD**: Liberal Democracy | **ED**: Electoral Democracy | **EA**: Electoral Autocracy | **CA**: Closed Autocracy  
-*(**+** indicates potential to belong to a higher category, **-** indicates potential for a lower category)*
+This graph presents the ACP segmentation based on V-Dem’s 2026 data. Countries are classified according to their latest regime typology, with dots sized according to their ACP rank/score and a minimum size applied for visibility. V-Dem’s original ranking table is available at https://www.v-dem.net.
+                        
+**Notes:** 
+`+` indicates potential to belong to a higher category and `-` indicates potential for a lower category (eg. `EA+`)
 """)
 
 # Filter out empty KPIs-R
@@ -242,21 +269,26 @@ fig_b.update_layout(
     xaxis=dict(
         tickmode='array',
         tickvals=[1, 2, 3],
-        ticktext=["Core AI Nations", "Semi-Periphery AI Nations", "Periphery AI Nations"],
+        ticktext=["Core AI Countries", "Semi-Periphery AI Countries", "Periphery AI Countries"],
         showgrid=False
     ),
     yaxis=dict(visible=False),  # Hide Y axis, but layout now reflects Score vertically
     showlegend=True,
+    height=600,
     legend_title_text="Political Type"
 )
-fig_b.add_vrect(x0=1.5, x1=2.5, fillcolor="#FDFD96", opacity=0.05, layer="below", line_width=0)
+fig_b.add_vrect(x0=1.5, x1=2.5, fillcolor="#FDFD96", opacity=0.02, layer="below", line_width=0)
 st.plotly_chart(fig_b, width='stretch')
 
 st.divider()
 
 # --- PLOT C: Power Concentration ---
-st.subheader("C) Power Concentration by Region")
-st.markdown("Bubble size represents the Power Concentration metric (`KPIs-PC`). Nations with 0/null values are assigned a baseline size for visibility.")
+st.subheader("C) ACP & Political Power Concentration")
+st.markdown("""
+The Power Concentration score (0–100) is a composite measure based on portfolio consolidation, multi-role leadership, and executive power density across governments. Data comes from the CIA World Factbook Archive project and is static, with the latest update dated July 2, 2026. The original analysis and further information are available at https://worldfactbookarchive.org/analysis/world-leaders/concentration.
+
+Dot size represents the Power Concentration score, while colors indicate geopolitical regions. Countries with zero or null values are assigned a baseline dot size for visibility.
+""")
 
 fig_c = px.scatter(
     df, 
@@ -282,12 +314,183 @@ fig_c.update_layout(
     xaxis=dict(
         tickmode='array',
         tickvals=[1, 2, 3],
-        ticktext=["Core AI Nations", "Semi-Periphery AI Nations", "Periphery AI Nations"],
+        ticktext=["Core AI Countries", "Semi-Periphery AI Countries", "Periphery AI Countries"],
         showgrid=False
     ),
     yaxis=dict(visible=False), # Hide Y axis
     showlegend=True,
     legend_title_text="Region"
 )
-fig_c.add_vrect(x0=1.5, x1=2.5, fillcolor="#FDFD96", opacity=0.05, layer="below", line_width=0)
+fig_c.add_vrect(x0=1.5, x1=2.5, fillcolor="#FDFD96", opacity=0.02, layer="below", line_width=0)
 st.plotly_chart(fig_c, use_container_width=True)
+
+
+st.divider()
+
+# --- PLOT D: Energy Capacity (IRENA) ---
+st.subheader("D) Energy Infrastructure & ACP Leapfrog Potential")
+st.markdown("""
+Power capacity serves as a critical proxy for compute readiness. As AI hardware becomes increasingly accessible, domestic energy grids will dictate which countries can scale hyperscale data centers and leapfrog in AI capabilities. 
+
+Dot size represents Total Installed Capacity (GW), sourced from the [International Renewable Energy Agency](https://pxweb.irena.org/pxweb/en/IRENASTAT/IRENASTAT__Power%20Capacity%20and%20Generation/Country_ELECCAP_2026_H1_v-PX%201.px/) (IRENA / 2025 data). Colors map to political regime typologies to highlight the intersection of infrastructural capacity and governance models. Countries with zero or null capacity data are assigned a baseline dot size for visibility.
+""")
+
+# Create a plot-safe version of KPIs-E to handle nulls/zeros for bubble sizes
+df["KPIs-E_plot"] = pd.to_numeric(df["KPIs-E"], errors="coerce").fillna(0)
+df["KPIs-E_plot"] = df["KPIs-E_plot"].apply(lambda x: 1 if x <= 0 else x)
+
+# Filter out empty regime types to keep the legend clean, matching Plot B
+df_d = df.dropna(subset=["KPIs-R"]).copy()
+
+fig_d = px.scatter(
+    df_d, 
+    x="PlotBC_X", 
+    y="PlotBC_Y", 
+    size="KPIs-E_plot", 
+    color="KPIs-R_base",
+    hover_name="Country",
+    text="Display_Label",
+    custom_data=["KPIs-E", "Region", "Classification", "Score"],
+    category_orders={"KPIs-R_base": [
+        "LD - Liberal Democracy", 
+        "ED - Electoral Democracy", 
+        "EA - Electoral Autocracy", 
+        "CA - Closed Autocracy"
+    ]},
+    color_discrete_sequence=px.colors.qualitative.Set3,
+    size_max=50 
+)
+
+fig_d.update_traces(
+    marker=dict(opacity=0.7, line=dict(width=1, color='White')),
+    textposition='top center',
+    hovertemplate="<b>%{hovertext}</b><br>Total GW: %{customdata[0]}<br>Region: %{customdata[1]}<br>Rank: %{customdata[2]}<br>Score: %{customdata[3]:.2f}<extra></extra>"
+)
+
+fig_d.update_layout(
+    xaxis_title="", 
+    yaxis_title="",
+    height=700,
+    xaxis=dict(
+        tickmode='array',
+        tickvals=[1, 2, 3],
+        ticktext=["Core AI Countries", "Semi-Periphery AI Countries", "Periphery AI Countries"],
+        showgrid=False
+    ),
+    yaxis=dict(visible=False), 
+    showlegend=True,
+    legend_title_text="Political Type"
+)
+
+fig_d.add_vrect(x0=1.5, x1=2.5, fillcolor="#FDFD96", opacity=0.02, layer="below", line_width=0)
+st.plotly_chart(fig_d, use_container_width=True)
+
+
+st.divider()
+
+# --- PLOT E: Developer Density (GitHub) ---
+st.subheader("E) ACP & Developer Density")
+st.markdown("""
+While energy dictates physical compute readiness, **Developer Density** serves as the proxy for "brain gain". It highlights which countries possess the sovereign talent to build, fine-tune, and maintain domestic AI models, and which are relegated to being consumer endpoints for Core APIs.
+
+Dot size represents the number of GitHub developers, sourced from the [GitHub Innovation Graph Q1 2026](https://innovationgraph.github.com/economies). Colors indicate geopolitical regions. States with zero or null data are assigned a baseline dot size for visibility.
+            
+**Note:** This indicator reflects GitHub accounts, not the total number of developers within a country. GitHub's coverage may also underrepresent China, where access to the platform may be restricted. Gitee, a major Chinese counterpart, [reports more than 14 million registered members](https://gitee.com/about_us); however, the geographic composition of its user base is not publicly established, and the extent of overlap with GitHub accounts is likewise unknown.
+
+""")
+
+# Create a plot-safe version of KPIs-GH to handle nulls/zeros for bubble sizes
+df["KPIs-GH_plot"] = pd.to_numeric(df["KPIs-GH"], errors="coerce").fillna(0)
+df["KPIs-GH_plot"] = df["KPIs-GH_plot"].apply(lambda x: 1 if x <= 0 else x)
+
+fig_e = px.scatter(
+    df, 
+    x="PlotBC_X", 
+    y="PlotBC_Y", 
+    size="KPIs-GH_plot", 
+    color="Region",
+    hover_name="Country",
+    text="Display_Label",
+    custom_data=["KPIs-GH", "Region", "Classification", "Score"],
+    color_discrete_sequence=px.colors.qualitative.Pastel, # Unique color theme
+    size_max=50 
+)
+
+fig_e.update_traces(
+    marker=dict(opacity=0.7, line=dict(width=1, color='White')),
+    textposition='top center',
+    hovertemplate="<b>%{hovertext}</b><br>GitHub Devs: %{customdata[0]:,.0f}<br>Region: %{customdata[1]}<br>Rank: %{customdata[2]}<br>Score: %{customdata[3]:.2f}<extra></extra>"
+)
+
+fig_e.update_layout(
+    xaxis_title="", 
+    yaxis_title="",
+    height=700,
+    xaxis=dict(
+        tickmode='array',
+        tickvals=[1, 2, 3],
+        ticktext=["Core AI Countries", "Semi-Periphery AI Countries", "Periphery AI Countries"],
+        showgrid=False
+    ),
+    yaxis=dict(visible=False), 
+    showlegend=True,
+    legend_title_text="Region"
+)
+
+fig_e.add_vrect(x0=1.5, x1=2.5, fillcolor="#FDFD96", opacity=0.02, layer="below", line_width=0)
+st.plotly_chart(fig_e, use_container_width=True)
+
+st.divider()
+
+# --- PLOT F: ICT Services Exports (World Bank) ---
+st.subheader("F) Unequal Exchange: ICT Services Exports")
+st.markdown("""
+In world-systems theory, the Core accumulates capital by exporting high-value manufactured goods, while the Periphery provides raw materials. In the AI economy, **ICT Services Exports** works as the ledger for this dynamic, isolating countries that act as sovereign technology 'makers' extracting capital versus those trapped as digital 'takers' bleeding capital to participate.
+
+Dot size represents ICT services exports in USD, sourced from the [World Bank](https://data.worldbank.org/indicator/BX.GSR.CCIS.CD?most_recent_year_desc=false). Colors indicate geopolitical regions. Countries with zero or null data are assigned a baseline dot size for visibility. Records reflect the most recent year available in the World Bank archives (mostly from 2023-2025).
+            
+Note: Ireland's ICT export figures are artificially inflated because US tech giants book global revenue through Irish subsidiaries to exploit its low corporate tax rate, distortion known as "[Leprechaun economics](https://en.wikipedia.org/wiki/Leprechaun_economics)."
+""")
+
+# Create a plot-safe version of KPIs-ICT to handle nulls/zeros for bubble sizes
+# NEW: Strip currency symbols and commas before converting to numbers
+cleaned_ict = df["KPIs-ICT"].astype(str).str.replace(r'[\$,]', '', regex=True)
+df["KPIs-ICT_plot"] = pd.to_numeric(cleaned_ict, errors="coerce").fillna(0)
+df["KPIs-ICT_plot"] = df["KPIs-ICT_plot"].apply(lambda x: 1 if x <= 0 else x)
+
+fig_f = px.scatter(
+    df, 
+    x="PlotBC_X", 
+    y="PlotBC_Y", 
+    size="KPIs-ICT_plot", 
+    color="Region",
+    hover_name="Country",
+    text="Display_Label",
+    custom_data=["KPIs-ICT", "Region", "Classification", "Score"],
+    color_discrete_sequence=px.colors.qualitative.Bold, # Unique color theme
+    size_max=50 
+)
+
+fig_f.update_traces(
+    marker=dict(opacity=0.7, line=dict(width=1, color='White')),
+    textposition='top center',
+    hovertemplate="<b>%{hovertext}</b><br>ICT Exports (USD): %{customdata[0]}<br>Region: %{customdata[1]}<br>Rank: %{customdata[2]}<br>Score: %{customdata[3]:.2f}<extra></extra>"
+)
+
+fig_f.update_layout(
+    xaxis_title="", 
+    yaxis_title="",
+    height=700,
+    xaxis=dict(
+        tickmode='array',
+        tickvals=[1, 2, 3],
+        ticktext=["Core AI Countries", "Semi-Periphery AI Countries", "Periphery AI Countries"],
+        showgrid=False
+    ),
+    yaxis=dict(visible=False), 
+    showlegend=True,
+    legend_title_text="Region"
+)
+
+fig_f.add_vrect(x0=1.5, x1=2.5, fillcolor="#FDFD96", opacity=0.02, layer="below", line_width=0)
+st.plotly_chart(fig_f, use_container_width=True)
