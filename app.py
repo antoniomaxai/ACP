@@ -43,32 +43,57 @@ sp_pct = st.sidebar.slider("Semi-Periphery (Up to % - Default: 18)", min_value=9
 
 # B. Ranking Weights
 st.sidebar.subheader("Ranking Weights (%)")
-st.sidebar.write("Adjust the 14 dimension weights. Total must not exceed 99.99%.")
+st.sidebar.write("Adjust weights across the 6 pillars. Total must not exceed 99.99%.")
 
-# Dictionary matching exactly the dimension names you provided
-default_weights = {
-    "Policy vision": 0.00,
-    "Policy commitment": 0.00,
-    "Compute capacity": 27.00,
-    "Enabling technical infrastructure": 15.00,
-    "Data quality": 7.00,
-    "Governance principles": 3.00,
-    "Regulatory compliance": 3.00,
-    "Government digital policy": 0.00,
-    "e-Government delivery": 0.00,
-    "Human capital": 10.00,
-    "AI sector maturity": 16.99,
-    "AI technology diffusion": 12.00,
-    "Societal transition": 3.00,
-    "Safety and security": 3.00
+# Structured by Oxford Insights Pillars & ACP Categories
+pillar_structure = {
+    "Policy Capacity": {
+        "Policy vision": 0.00,
+        "Policy commitment": 0.00
+    },
+    "AI Infrastructure": {
+        "Compute capacity": 27.00,
+        "Enabling technical infrastructure": 15.00,
+        "Data quality": 7.00
+    },
+    "Governance": {
+        "Governance principles": 3.00,
+        "Regulatory compliance": 3.00
+    },
+    "Public Sector Adoption": {
+        "Government digital policy": 0.00,
+        "e-Government delivery": 0.00
+    },
+    "Development & Diffusion": {
+        "Human capital": 10.00,
+        "AI sector maturity": 16.99,
+        "AI technology diffusion": 12.00
+    },
+    "Resilience": {
+        "Societal transition": 3.00,
+        "Safety and security": 3.00
+    }
 }
 
 active_weights = {}
 total_weight = 0.0
 
-for dim, default_val in default_weights.items():
-    active_weights[dim] = st.sidebar.number_input(f"{dim}", min_value=0.0, max_value=100.0, value=default_val, step=1.0)
-    total_weight += active_weights[dim]
+# Render inputs inside collapsible pillar containers
+for pillar_name, dimensions in pillar_structure.items():
+    with st.sidebar.expander(pillar_name, expanded=False):
+        for dim, default_val in dimensions.items():
+            active_weights[dim] = st.number_input(
+                f"{dim}", 
+                min_value=0.0, 
+                max_value=100.0, 
+                value=default_val, 
+                step=0.5,
+                key=f"weight_{dim}"
+            )
+            total_weight += active_weights[dim]
+
+# Live indicator showing total sum
+st.sidebar.markdown(f"**Total Weight:** `{total_weight:.2f}% / 99.99%`")
 
 if total_weight > 99.99:
     st.sidebar.error(f"⚠️ Total weight is {total_weight:.2f}%. It must be ≤ 99.99%.")
@@ -364,7 +389,7 @@ fig_d = px.scatter(
 fig_d.update_traces(
     marker=dict(opacity=0.7, line=dict(width=1, color='White')),
     textposition='top center',
-    hovertemplate="<b>%{hovertext}</b><br>Total GW: %{customdata[0]}<br>Region: %{customdata[1]}<br>Rank: %{customdata[2]}<br>Score: %{customdata[3]:.2f}<extra></extra>"
+    hovertemplate="<b>%{hovertext}</b><br>Total GW: %{customdata[0]:,.2f}<br>Region: %{customdata[1]}<br>Rank: %{customdata[2]}<br>Score: %{customdata[3]:.2f}<extra></extra>"
 )
 
 fig_d.update_layout(

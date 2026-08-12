@@ -1,196 +1,196 @@
-Position,Country,Score,Classification,KPIs-PC,KPIs-R,KPIs-E,KPIs-ICT,KPIs-GH,Region,ShowLabel,Label
-1,United States of America,89.04,Core AI Nation,0,ED+,1300.4492,"$102,266,000,000.00",32410529,North America,TRUE,USA
-2,China,77.14,Core AI Nation,24.7,CA,3825.4305,"$73,608,543,370.33",11351939,Indo-Pacific,TRUE,China
-3,France,69.94,Core AI Nation,0,LD-,164.07812,"$29,318,580,351.01",4034001,Europe & Eurasia,TRUE,France
-4,United Kingdom of Great Britain and Northern Ireland,68.07,Core AI Nation,0,ED+,108.07939,"$64,962,179,229.66",5559767,Europe & Eurasia,TRUE,UK
-5,Germany,67.63,Core AI Nation,5,LD,276.14445,"$59,436,995,901.93",5255625,Europe & Eurasia,FALSE,
-6,Japan,66.01,Core AI Nation,46.4,LD,344.75052,"$14,737,077,018.26",5433912,Indo-Pacific,FALSE,
-7,Canada,65.9,Core AI Nation,34.2,ED+,155.60907,"$24,752,633,587.69",3991305,North America,TRUE,Canada
-8,Republic of Korea,64.64,Core AI Nation,8.1,LD,157.14698,"$18,720,800,000.00",3145730,Indo-Pacific,TRUE,South Korea
-9,Singapore,64.63,Core AI Nation,33.5,EA,12.91682,"$33,599,143,370.68",2170580,Indo-Pacific,TRUE,Singapore
-10,Australia,62.76,Semi-Periphery AI Nation,35.1,LD,118.30063,"$3,105,487,195.27",2368357,Indo-Pacific,FALSE,Australia
-11,Netherlands,62.56,Semi-Periphery AI Nation,9.6,LD,62.6244,"$29,340,716,452.60",2185318,Europe & Eurasia,TRUE,Netherlands
-12,Switzerland,60.33,Semi-Periphery AI Nation,20,LD,29.45983,"$25,072,781,471.68",781300,Europe & Eurasia,FALSE,
-13,Italy,59.63,Semi-Periphery AI Nation,7.4,LD-,143.68006,"$10,552,459,962.80",1989642,Europe & Eurasia,FALSE,
-14,United Arab Emirates,59.36,Semi-Periphery AI Nation,20.7,CA,51.27353,"$8,304,969,366.92",656185,Middle East & Central Asia,TRUE,UAE
-15,Spain,59.08,Semi-Periphery AI Nation,0,LD,142.47471,"$26,644,819,992.20",2802085,Europe & Eurasia,FALSE,Spain
-16,Sweden,58.11,Semi-Periphery AI Nation,4,LD,54.6186,"$27,243,794,901.26",1029024,Europe & Eurasia,FALSE,Sweden
-17,Israel,57.79,Semi-Periphery AI Nation,3.4,ED+,26.6641,"$59,759,500,000.00",935953,Middle East & Central Asia,TRUE,Israel
-18,Norway,57.77,Semi-Periphery AI Nation,0,LD,41.25935,"$5,666,436,945.86",510054,Europe & Eurasia,FALSE,
-19,India,56.86,Semi-Periphery AI Nation,34.4,EA,572.98154,"$200,343,788,282.56",26727004,Indo-Pacific,TRUE,India
-20,Ireland,56.32,Semi-Periphery AI Nation,0,LD,13.76729,"$301,732,326,532.08",487502,Europe & Eurasia,TRUE,Ireland
-21,Finland,55.42,Semi-Periphery AI Nation,4.7,LD,26.01623,"$14,309,364,752.57",538218,Europe & Eurasia,FALSE,Finland
-22,Denmark,54.78,Semi-Periphery AI Nation,0,LD,19.8454,"$9,611,092,436.70",543334,Europe & Eurasia,FALSE,
-23,Brazil,54.68,Semi-Periphery AI Nation,0,ED+,261.59459,"$7,440,671,937.69",8317960,Central & South America,TRUE,Brazil
-24,Austria,54.6,Semi-Periphery AI Nation,18.4,LD-,36.81574,"$13,642,233,295.75",611388,Europe & Eurasia,FALSE,
-25,Saudi Arabia,54.21,Semi-Periphery AI Nation,5.4,CA,101.052,"$2,509,479,111.88",988061,Middle East & Central Asia,FALSE,Saudi Arabia
-26,Poland,53.94,Semi-Periphery AI Nation,0,ED,71.84035,"$22,112,000,000.00",2074728,Europe & Eurasia,FALSE,
-27,Taiwan,52.43,Semi-Periphery AI Nation,3.7,LD,,,1890259,Indo-Pacific,TRUE,Taiwan
-28,Malaysia,50.75,Semi-Periphery AI Nation,9.4,ED-,39.24855,"$4,623,972,785.34",1139033,Indo-Pacific,FALSE,
-29,Czechia,50.17,Semi-Periphery AI Nation,22,LD,22.47214,"$8,635,997,823.02",606127,Europe & Eurasia,FALSE,
-30,Portugal,49.72,Semi-Periphery AI Nation,0,ED,26.87355,"$5,309,029,498.95",740488,Europe & Eurasia,FALSE,Portugal
-31,Belgium,49.65,Semi-Periphery AI Nation,23.7,LD,26.859,"$23,772,123,495.80",748934,Europe & Eurasia,FALSE,
-32,Thailand,48.28,Semi-Periphery AI Nation,42.8,EA,61.60372,"$465,579,231.25",1570196,Indo-Pacific,FALSE,
-33,Russian Federation,47.96,Semi-Periphery AI Nation,0,EA,252.20576,"$2,698,030,000.00",4627668,Europe & Eurasia,TRUE,Russia
-34,New Zealand,47.25,Semi-Periphery AI Nation,64.5,LD,11.24188,"$1,107,097,583.41",441201,Indo-Pacific,FALSE,New Zealand
-35,Indonesia,46.93,Semi-Periphery AI Nation,0,EA+,94.2544,"$4,089,565,622.03",5270032,Indo-Pacific,FALSE,
-36,Luxembourg,46.59,Periphery AI Nation,37.4,LD,1.20426,"$5,705,794,078.00",61847,Europe & Eurasia,FALSE,
-37,Bahrain,46.55,Periphery AI Nation,0,CA,10.68081,"$1,406,648,936.17",62656,Middle East & Central Asia,FALSE,
-38,Slovenia,46.06,Periphery AI Nation,0,ED,4.84208,"$1,384,562,488.72",117306,Europe & Eurasia,FALSE,
-39,Viet Nam,46.01,Periphery AI Nation,0,CA,87.59966,,2972715,Indo-Pacific,FALSE,
-40,South Africa,45.9,Periphery AI Nation,0,ED,67.28849,"$1,706,339,819.33",1058997,Africa,FALSE,
-41,Chile,45.44,Periphery AI Nation,4,LD-,40.26555,"$764,069,244.55",809093,Central & South America,TRUE,Chile
-42,Estonia,45.04,Periphery AI Nation,0,LD,3.42936,"$3,907,740,648.39",149001,Europe & Eurasia,TRUE,Estonia
-43,Iceland,44.89,Periphery AI Nation,7.4,LD,2.99783,"$866,512,543.80",42927,Europe & Eurasia,FALSE,
-44,Lithuania,44.87,Periphery AI Nation,0,LD-,7.669,"$3,583,933,605.54",227028,Europe & Eurasia,FALSE,
-45,Hungary,44.4,Periphery AI Nation,6.2,EA,15.6631,"$4,859,716,636.82",464901,Europe & Eurasia,FALSE,
-46,Qatar,43.86,Periphery AI Nation,13.7,CA,12.2861,"$578,021,978.02",109057,Middle East & Central Asia,TRUE,Qatar
-47,Malta,43.62,Periphery AI Nation,4.7,ED+,0.85663,"$448,442,444.62",43600,Europe & Eurasia,FALSE,
-48,Türkiye,43.19,Periphery AI Nation,0,EA,122.80279,"$5,336,000,000.00",2544065,Europe & Eurasia,FALSE,
-49,Egypt,42.58,Periphery AI Nation,0,EA,63.20353,"$2,061,400,000.00",1626418,Middle East & Central Asia,FALSE,
-50,Greece,42.5,Periphery AI Nation,0,ED,30.44972,"$1,777,124,295.72",394067,Europe & Eurasia,FALSE,Greece
-51,Ukraine,42.48,Periphery AI Nation,0,EA,24.36,"$6,610,000,000.00",1729006,Europe & Eurasia,FALSE,
-52,Philippines,42.47,Periphery AI Nation,0,EA,31.8478,"$8,827,634,084.76",2815527,Indo-Pacific,FALSE,
-53,Bulgaria,41.89,Periphery AI Nation,8.8,ED,16.64658,"$4,781,510,000.00",362099,Europe & Eurasia,FALSE,
-54,Romania,41.86,Periphery AI Nation,0,ED,22.4936,"$13,020,041,811.32",795527,Europe & Eurasia,FALSE,
-55,Cyprus,41.07,Periphery AI Nation,0,LD-,2.54137,"$10,030,920,648.08",96793,Europe & Eurasia,FALSE,
-56,Colombia,40.09,Periphery AI Nation,0,ED,21.34532,"$2,309,838,336.22",1670892,Central & South America,FALSE,
-57,Latvia,39.82,Periphery AI Nation,0,LD,3.82615,"$1,774,217,198.27",190889,Europe & Eurasia,FALSE,
-58,Kazakhstan,39.58,Periphery AI Nation,10.3,EA,26.68369,"$1,355,233,820.00",463403,Middle East & Central Asia,FALSE,
-59,Uruguay,39.48,Periphery AI Nation,0,LD-,5.27806,"$1,502,706,315.04",160501,Central & South America,TRUE,Uruguay
-60,Oman,39.4,Periphery AI Nation,24,CA,12.58908,"$393,434,459.04",95170,Middle East & Central Asia,FALSE,
-61,Uzbekistan,39.35,Periphery AI Nation,3.4,CA+,27.79717,"$921,500,245.55",395040,Middle East & Central Asia,FALSE,
-62,Serbia,39.17,Periphery AI Nation,6.5,EA,8.57791,"$5,146,715,244.93",325368,Europe & Eurasia,FALSE,
-63,Argentina,39.01,Periphery AI Nation,0,ED,44.44295,"$2,825,472,485.37",1599355,Central & South America,FALSE,Argentina
-64,Slovakia,38.32,Periphery AI Nation,0,ED,7.471,"$2,379,368,027.09",212894,Europe & Eurasia,FALSE,
-65,Jordan,38.08,Periphery AI Nation,0,CA,7.2925,"$48,169,014.08",242986,Middle East & Central Asia,FALSE,
-66,Mauritius,37.97,Periphery AI Nation,24.4,ED+,0.95699,"$171,025,852.88",50296,Africa,FALSE,
-67,Azerbaijan,37.95,Periphery AI Nation,0,EA,9.7287,"$130,308,000.00",195331,Europe & Eurasia,FALSE,
-68,Mexico,37.67,Periphery AI Nation,0,EA+,122.80961,"$3,255,094,101.00",2865151,North America,TRUE,Mexico
-69,Nigeria,37.5,Periphery AI Nation,5.6,ED-,14.53693,"$107,979,745.21",1794519,Africa,FALSE,
-70,Andorra,36.92,Periphery AI Nation,6.9,,0.06235,"$132,308,029.79",7489,Europe & Eurasia,FALSE,
-71,Monaco,36.77,Periphery AI Nation,0,,,,3256,Europe & Eurasia,FALSE,
-72,Iran (Islamic Republic of),36.48,Periphery AI Nation,0,EA-,96.27069,,898557,Middle East & Central Asia,FALSE,
-73,Croatia,36.24,Periphery AI Nation,0,ED,6.315,"$1,925,467,019.37",191502,Europe & Eurasia,FALSE,
-74,Kenya,36.18,Periphery AI Nation,3.7,ED-,3.465,"$853,401,195.56",678197,Africa,FALSE,
-75,Ghana,36.17,Periphery AI Nation,8.5,ED,5.87101,"$61,344,923.39",328387,Africa,FALSE,
-76,Peru,36.05,Periphery AI Nation,0,ED,16.02342,"$174,917,518.64",907052,Central & South America,FALSE,
-77,Pakistan,35.77,Periphery AI Nation,6.2,EA,50.26116,"$4,185,000,000.00",2497496,Middle East & Central Asia,FALSE,
-78,Morocco,35.32,Periphery AI Nation,0,CA,11.40693,"$2,804,458,304.54",906406,Africa,TRUE,Morocco
-79,Kuwait,34.65,Periphery AI Nation,34.8,CA,20.32686,"$6,252,957,273.99",112085,Middle East & Central Asia,FALSE,Kuwait
-80,Ecuador,34.36,Periphery AI Nation,13,ED,8.13558,"$126,384,907.83",418829,Central & South America,FALSE,
-81,Tunisia,34.19,Periphery AI Nation,0,EA,7.269,"$516,932,907.37",420582,Africa,FALSE,
-82,Algeria,33.87,Periphery AI Nation,22.7,EA,27.98745,"$72,750,835.40",586990,Africa,FALSE,
-83,Sri Lanka,33.23,Periphery AI Nation,30,ED,6.87387,"$971,460,298.34",541411,Indo-Pacific,FALSE,
-84,Liechtenstein,33.17,Periphery AI Nation,24.4,,,,3056,Europe & Eurasia,FALSE,
-85,Georgia,33.14,Periphery AI Nation,14.3,EA,5.03336,"$1,292,300,366.64",198539,Europe & Eurasia,FALSE,
-86,Albania,32.3,Periphery AI Nation,4.7,EA+,3.59481,"$294,595,138.01",103489,Europe & Eurasia,FALSE,
-87,Côte D'Ivoire,32.23,Periphery AI Nation,11.9,,,"$119,958,050.78",112935,Africa,FALSE,
-88,Costa Rica,32.13,Periphery AI Nation,8.8,LD,3.72502,"$2,667,838,385.16",231325,Central & South America,FALSE,
-89,Rwanda,31.35,Periphery AI Nation,0,EA,0.32214,"$34,451,932.61",87857,Africa,FALSE,
-90,Republic of Moldova,31.21,Periphery AI Nation,0,ED-,,"$893,128,490.84",140751,Europe & Eurasia,FALSE,
-91,Ethiopia,31.21,Periphery AI Nation,0,EA,10.15844,"$42,591,405.05",251351,Africa,FALSE,
-92,Zambia,30.72,Periphery AI Nation,0,EA+,4.1451,"$25,034,545.85",64531,Africa,FALSE,
-93,San Marino,30.71,Periphery AI Nation,8.5,,,,1381,Europe & Eurasia,FALSE,
-94,State of Palestine,30.7,Periphery AI Nation,,,,,,,FALSE,
-95,Brunei Darussalam,30.67,Periphery AI Nation,47.8,,1.04484,"$15,156,737.35",17551,Indo-Pacific,FALSE,
-96,Senegal,30.58,Periphery AI Nation,3.7,ED,2.32648,"$128,356,504.13",91364,Africa,FALSE,
-97,United Republic of Tanzania,30.45,Periphery AI Nation,,,,,,,FALSE,
-98,Bangladesh,30.42,Periphery AI Nation,23.1,CA,26.49334,"$740,887,869.00",1882249,Indo-Pacific,FALSE,
-99,Panama,30.4,Periphery AI Nation,0,ED,5.2878,"$501,332,378.97",96375,Central & South America,FALSE,
-100,Botswana,30.09,Periphery AI Nation,5.3,ED,1.0585,"$35,334,750.96",30651,Africa,FALSE,
-101,Montenegro,29.97,Periphery AI Nation,3.2,ED+,1.1477,"$193,625,414.82",29425,Europe & Eurasia,FALSE,
-102,Lebanon,29.88,Periphery AI Nation,0,EA,3.50012,"$140,728,785.55",165282,Middle East & Central Asia,FALSE,
-103,Iraq,29.42,Periphery AI Nation,8.6,EA,35.09858,"$92,400,000.00",454373,Middle East & Central Asia,FALSE,
-104,Bhutan,29.25,Periphery AI Nation,0,ED-,3.51179,"$1,288,128.11",14370,Indo-Pacific,FALSE,
-105,El Salvador,28.79,Periphery AI Nation,0,EA,3.10124,"$455,265,617.46",136169,Central & South America,FALSE,
-106,Armenia,28.6,Periphery AI Nation,0,ED,4.2747,"$1,501,550,826.32",141176,Europe & Eurasia,FALSE,
-107,Fiji,28.53,Periphery AI Nation,16.7,ED-,0.41659,"$10,051,626.57",10906,Indo-Pacific,FALSE,
-108,Belarus,28.43,Periphery AI Nation,0,CA,13.4978,"$3,238,862,750.00",407977,Europe & Eurasia,FALSE,
-109,Cameroon,28.42,Periphery AI Nation,0,EA,2.13572,"$189,161,798.41",139140,Africa,FALSE,
-110,North Macedonia,28.41,Periphery AI Nation,3.1,ED-,3.22022,"$764,410,217.70",81773,Europe & Eurasia,FALSE,
-111,Paraguay,28.33,Periphery AI Nation,0,ED,8.84727,"$519,331,142.83",93779,Central & South America,FALSE,
-112,Nepal,28.16,Periphery AI Nation,26.5,ED,3.9874,,486967,Indo-Pacific,TRUE,Nepal
-113,Mongolia,27.82,Periphery AI Nation,4.4,ED-,1.8725,"$61,798,307.84",89495,Indo-Pacific,FALSE,
-114,Cambodia,27.51,Periphery AI Nation,0,EA,5.50678,"$253,436,975.80",235476,Indo-Pacific,FALSE,
-115,Dominican Republic,27.28,Periphery AI Nation,0,ED,7.98916,"$75,300,000.00",217451,Central & South America,FALSE,
-116,Namibia,27.25,Periphery AI Nation,0,ED-,0.9157,"$26,028,082.63",22072,Africa,FALSE,
-117,Jamaica,27.23,Periphery AI Nation,40,ED,1.67785,"$127,565,622.58",58587,Central & South America,FALSE,
-118,Kyrgyzstan,26.64,Periphery AI Nation,4.2,EA,4.45138,,121507,Middle East & Central Asia,FALSE,
-119,Lao People's Democratic Republic,26.24,Periphery AI Nation,23.9,CA,14.33878,"$60,763,412.54",40818,Indo-Pacific,FALSE,
-120,Bosnia and Herzegovina,26.18,Periphery AI Nation,11.8,EA+,5.02419,"$521,779,854.27",99259,Europe & Eurasia,FALSE,
-121,Libya,26.12,Periphery AI Nation,25.8,CA,11.41914,"$11,900,000.00",73665,Africa,TRUE,Libya
-122,Benin,25.27,Periphery AI Nation,4.4,EA+,0.3279,"$14,021,610.72",66467,Africa,FALSE,
-123,Vanuatu,25.26,Periphery AI Nation,13,ED+,0.0331,"$6,448,986.52",1289,Indo-Pacific,FALSE,
-124,Trinidad and Tobago,24.99,Periphery AI Nation,9.7,LD-,2.13688,"$42,093,408.73",41845,Central & South America,FALSE,
-125,Uganda,24.95,Periphery AI Nation,3.4,EA,2.01495,"$48,478,909.46",147165,Africa,FALSE,
-126,Democratic People's Republic of Korea,24.83,Periphery AI Nation,14,CA,8.52839,,,Indo-Pacific,FALSE,
-127,Tuvalu,24.25,Periphery AI Nation,18.4,,0.0048,"$146,061.49",,Indo-Pacific,FALSE,
-128,Kiribati,24.07,Periphery AI Nation,20.6,,0.00836,"$369,250.75",520,Indo-Pacific,FALSE,
-129,Gabon,23.98,Periphery AI Nation,0,EA,0.862,"$2,132,050.13",16223,Africa,FALSE,
-130,Palau,23.93,Periphery AI Nation,19.2,,0.04948,"$164,000.00",397,Indo-Pacific,FALSE,
-131,Bahamas,23.93,Periphery AI Nation,0,,0.95252,,11344,North America,FALSE,
-132,Nauru,23.43,Periphery AI Nation,60,,0.02871,,110,Indo-Pacific,FALSE,
-133,Maldives,23.35,Periphery AI Nation,0,ED-,0.3195,"$46,894,839.10",22798,Indo-Pacific,FALSE,
-134,Zimbabwe,23.29,Periphery AI Nation,0,EA,3.13228,"$14,930,000.00",84670,Africa,FALSE,
-135,Tonga,23.05,Periphery AI Nation,35,,0.03616,"$113,498.77",778,Indo-Pacific,FALSE,
-136,Turkmenistan,23,Periphery AI Nation,5.9,CA+,7.00231,,7738,Middle East & Central Asia,FALSE,
-137,Djibouti,22.81,Periphery AI Nation,3.7,EA,0.183,"$80,518,861.54",5867,Africa,FALSE,
-138,Cuba,22.65,Periphery AI Nation,2.9,CA,6.1662,,52084,Central & South America,FALSE,
-139,Seychelles,22.59,Periphery AI Nation,33.9,LD,0.12814,"$10,532,979.33",26777,Africa,FALSE,
-140,Samoa,22.5,Periphery AI Nation,18.4,,0.05966,"$26,864,236.51",830,Indo-Pacific,FALSE,
-141,Myanmar,22.01,Periphery AI Nation,,CA,7.02881,"$149,715,842.22",199199,,FALSE,
-142,"Venezuela, Bolivarian Republic of",21.85,Periphery AI Nation,2.7,EA,35.66854,"$64,000,000.00",345018,Central & South America,FALSE,
-143,Marshall Islands,21.82,Periphery AI Nation,7.4,,0.04197,"$317,697.24",340,Indo-Pacific,FALSE,
-144,Solomon Islands,21.61,Periphery AI Nation,8.1,ED,0.04708,"$2,541,793.25",1533,Indo-Pacific,FALSE,
-145,Guatemala,21.59,Periphery AI Nation,0,ED,3.82412,"$556,852,050.00",195658,Central & South America,FALSE,
-146,Papua New Guinea,21.45,Periphery AI Nation,33.7,EA,0.64749,"$196,375.58",16631,Indo-Pacific,FALSE,
-147,Syrian Arab Republic,21.44,Periphery AI Nation,,,8.92971,"$140,657,918.97",67957,,FALSE,
-148,Malawi,21.39,Periphery AI Nation,0,ED-,0.61492,"$161,059,368.79",35746,Africa,FALSE,
-149,Bolivia (Plurinational State of),21.33,Periphery AI Nation,6.5,ED,3.5509,"$47,023,396.71",222560,Central & South America,TRUE,Bolivia
-150,Guyana,21.28,Periphery AI Nation,0,ED-,0.26845,"$4,553,370.00",11193,Central & South America,FALSE,
-151,Micronesia (Federated States of),21.19,Periphery AI Nation,0,,0.04826,,570,Indo-Pacific,FALSE,
-152,Barbados,20.88,Periphery AI Nation,4.1,LD-,0.36804,"$3,438,207.61",10660,Central & South America,FALSE,
-153,Saint Lucia,20.86,Periphery AI Nation,6.2,,,,4283,Central & South America,FALSE,
-154,Togo,20.84,Periphery AI Nation,0,EA,0.34019,"$35,585,472.61",40421,Africa,FALSE,
-155,Democratic Republic of the Congo,20.7,Periphery AI Nation,2.3,EA,3.6465,"$2,513,902.75",66438,Africa,FALSE,
-156,Somalia,20.58,Periphery AI Nation,0,CA,0,,72309,Africa,FALSE,
-157,Angola,20.56,Periphery AI Nation,0,EA,5.95841,"$20,569,382.05",81314,Africa,FALSE,
-158,Cabo Verde,20.47,Periphery AI Nation,0,ED,0.22884,"$10,998,456.23",7526,Africa,FALSE,
-159,Tajikistan,20.18,Periphery AI Nation,0,EA,6.54069,"$2,982,910.00",26111,Middle East & Central Asia,FALSE,
-160,Lesotho,20.17,Periphery AI Nation,28.8,ED,0.10328,"$15,666.63",10459,Africa,FALSE,
-161,Belize,20.08,Periphery AI Nation,15,,0.23127,"$123,299,500.00",9715,Central & South America,FALSE,
-162,Eswatini,20.03,Periphery AI Nation,0,CA,0.20463,"$5,985,175.34",7975,Africa,FALSE,
-163,Saint Kitts and Nevis,19.8,Periphery AI Nation,0,,,,1741,Central & South America,FALSE,
-164,Mali,19.77,Periphery AI Nation,23.5,CA,1.02076,"$172,162,628.15",21292,Africa,FALSE,
-165,Antigua and Barbuda,19.75,Periphery AI Nation,15.7,,0.12502,"$6,622,210.74",2570,Central & South America,FALSE,
-166,Honduras,19.7,Periphery AI Nation,4,ED-,3.52467,"$36,388,048.86",103171,Central & South America,FALSE,
-167,Mozambique,19.69,Periphery AI Nation,0,EA,2.6009,"$9,116,548.23",48751,Africa,FALSE,
-168,Suriname,19.68,Periphery AI Nation,4.7,ED,0.58143,"$18,200,862.08",8887,Central & South America,FALSE,
-169,Timor-Leste,19.63,Periphery AI Nation,0,ED,0.3169,"$6,501,444.41",3545,Indo-Pacific,FALSE,
-170,Gambia (Republic of The),18.66,Periphery AI Nation,0,ED+,0.18469,"$1,479,038.09",8554,Africa,FALSE,
-171,Dominica,18.64,Periphery AI Nation,6.2,,0.02688,"$3,209,453.33",1803,Central & South America,FALSE,
-172,Saint Vincent and the Grenadines,18.33,Periphery AI Nation,12.2,,,"$3,014,697.41",2176,Central & South America,FALSE,
-173,Burkina Faso,18.28,Periphery AI Nation,4.4,CA,0.61335,"$89,572,559.09",33834,Africa,FALSE,
-174,Mauritania,18.24,Periphery AI Nation,3.3,EA,0.60481,"$2,831,044.33",16255,Africa,FALSE,
-175,Nicaragua,18.05,Periphery AI Nation,0,EA,1.63901,"$252,300,000.00",69807,Central & South America,FALSE,
-176,Grenada,17.83,Periphery AI Nation,0,,0.07406,"$5,457,399.26",3085,Central & South America,FALSE,
-177,Congo,17.66,Periphery AI Nation,0,EA,0.99276,"$13,111,988.80",18243,Africa,FALSE,
-178,Guinea,16.95,Periphery AI Nation,3.3,CA,1.2402,"$36,860,000.00",15644,Africa,FALSE,
-179,Comoros,16.59,Periphery AI Nation,5.5,EA,0.03235,"$13,602,459.79",,Africa,FALSE,
-180,Madagascar,16.42,Periphery AI Nation,0,EA,0.86391,"$294,407,364.21",81275,Africa,FALSE,
-181,Equatorial Guinea,16.15,Periphery AI Nation,3.2,EA,0.40111,,2289,Africa,FALSE,
-182,Sao Tome and Principe,16.15,Periphery AI Nation,7.4,ED,0.04288,"$493,541.19",859,Africa,FALSE,
-183,Sudan,15.41,Periphery AI Nation,0,CA,3.08729,"$912,664.03",49732,Africa,FALSE,
-184,Eritrea,15.02,Periphery AI Nation,0,CA,0.20529,"$8,241,677.41",1628,Africa,FALSE,
-185,Yemen,14.92,Periphery AI Nation,6.3,CA,1.67775,"$118,100,000.00",146772,Middle East & Central Asia,FALSE,
-186,Chad,14.88,Periphery AI Nation,8,EA,0.3938,,6676,Africa,FALSE,
-187,Sierra Leone,14.61,Periphery AI Nation,0,EA+,0.23463,"$1,569,039.27",16670,Africa,FALSE,
-188,Afghanistan,14.13,Periphery AI Nation,0,CA,0.67248,"$54,766,062.19",59957,Middle East & Central Asia,FALSE,
-189,South Sudan,13.56,Periphery AI Nation,0,CA,0.074,"$35,640,000.00",7034,Africa,FALSE,
-190,Guinea Bissau,13.18,Periphery AI Nation,4.2,CA+,0.028,"$14,974,784.23",1521,Africa,FALSE,
-191,Liberia,12.77,Periphery AI Nation,0,ED,0.18614,,11954,Africa,FALSE,
-192,Haiti,12.65,Periphery AI Nation,0,CA,0.48175,"$2,000,000.00",29835,Central & South America,FALSE,
-193,Niger,12.33,Periphery AI Nation,4.2,CA,0.5206,"$70,015,402.39",9598,Africa,TRUE,Niger
-194,Central African Republic,11.21,Periphery AI Nation,0,,,,868,Africa,FALSE,
-195,Burundi,11.07,Periphery AI Nation,0,EA,0.22079,"$4,259,512.43",9617,Africa,FALSE,
+Position,Country,Score,Classification,KPIs-PC,KPIs-R,KPIs-E,KPIs-ICT,KPIs-GH,Region,ShowLabel,Label,Policy vision,Policy commitment,Compute capacity,Enabling technical infrastructure,Data quality,Governance principles,Regulatory compliance,Government digital policy,e-Government delivery,Human capital,AI sector maturity,AI technology diffusion,Societal transition,Safety and security
+188,Afghanistan,14.13,Periphery AI Nation,0,CA,0.67248,"$54,766,062.19",59957,Middle East & Central Asia,FALSE,,0.00,0.00,3.29,37.57,16.95,2.50,20.00,0.00,53.59,18.41,4.85,14.33,22.13,23.00
+86,Albania,32.3,Periphery AI Nation,4.7,EA+,3.59481,"$294,595,138.01",103489,Europe & Eurasia,FALSE,,20.00,25.00,4.83,69.01,79.79,50.00,53.33,51.03,86.86,21.23,14.18,41.04,49.87,33.33
+82,Algeria,33.87,Periphery AI Nation,22.7,EA,27.98745,"$72,750,835.40",586990,Africa,FALSE,,70.00,62.50,5.84,62.17,61.37,48.00,70.00,23.80,29.05,33.86,20.10,52.21,35.55,33.33
+70,Andorra,36.92,Periphery AI Nation,6.9,,0.06235,"$132,308,029.79",7489,Europe & Eurasia,FALSE,,40.00,25.00,4.16,69.52,70.21,70.50,38.05,10.54,40.95,52.34,17.01,50.63,73.50,26.33
+157,Angola,20.56,Periphery AI Nation,0,EA,5.95841,"$20,569,382.05",81314,Africa,FALSE,,20.00,12.50,6.59,40.69,45.04,42.50,63.56,15.87,43.16,25.90,4.37,15.40,27.70,11.00
+165,Antigua and Barbuda,19.75,Periphery AI Nation,15.7,,0.12502,"$6,622,210.74",2570,Central & South America,FALSE,,20.00,25.00,0.00,48.63,48.04,46.75,50.00,15.00,10.41,17.43,5.10,18.04,46.98,0.00
+63,Argentina,39.01,Periphery AI Nation,0,ED,44.44295,"$2,825,472,485.37",1599355,Central & South America,FALSE,Argentina,70.00,75.00,11.28,60.96,78.54,94.75,74.62,55.71,86.41,44.95,9.66,49.15,47.07,93.00
+106,Armenia,28.6,Periphery AI Nation,0,ED,4.2747,"$1,501,550,826.32",141176,Europe & Eurasia,FALSE,,30.00,25.00,3.29,60.86,58.91,43.50,70.00,45.00,69.81,23.68,11.39,42.38,40.16,15.33
+10,Australia,62.76,Semi-Periphery AI Nation,35.1,LD,118.30063,"$3,105,487,195.27",2368357,Indo-Pacific,FALSE,Australia,100.00,100.00,40.81,78.70,90.54,75.00,83.08,84.03,81.30,81.39,42.38,71.12,65.89,100.00
+24,Austria,54.6,Semi-Periphery AI Nation,18.4,LD-,36.81574,"$13,642,233,295.75",611388,Europe & Eurasia,FALSE,,90.00,50.00,17.43,74.74,91.98,96.25,77.75,67.24,95.96,70.15,42.04,67.33,72.70,86.67
+67,Azerbaijan,37.95,Periphery AI Nation,0,EA,9.7287,"$130,308,000.00",195331,Europe & Eurasia,FALSE,,40.00,62.50,4.16,74.93,75.25,50.00,70.00,40.48,93.47,60.31,10.95,45.34,46.03,66.67
+131,Bahamas,23.93,Periphery AI Nation,0,,0.95252,,11344,North America,FALSE,,20.00,0.00,4.83,56.21,59.75,36.75,70.48,33.27,51.01,23.65,5.10,18.04,46.39,0.00
+37,Bahrain,46.55,Periphery AI Nation,0,CA,10.68081,"$1,406,648,936.17",62656,Middle East & Central Asia,FALSE,,60.00,37.50,12.12,79.36,82.65,75.00,70.00,85.91,80.83,69.53,27.83,55.03,48.16,50.00
+98,Bangladesh,30.42,Periphery AI Nation,23.1,CA,26.49334,"$740,887,869.00",1882249,Indo-Pacific,FALSE,,60.00,75.00,8.31,60.06,48.70,56.50,71.37,72.12,93.44,35.12,5.44,47.53,25.94,33.33
+152,Barbados,20.88,Periphery AI Nation,4.1,LD-,0.36804,"$3,438,207.61",10660,Central & South America,FALSE,,20.00,12.50,0.00,54.95,49.59,41.50,40.00,0.00,12.44,22.58,4.63,18.04,46.98,3.33
+108,Belarus,28.43,Periphery AI Nation,0,CA,13.4978,"$3,238,862,750.00",407977,Europe & Eurasia,FALSE,,30.00,0.00,3.29,53.50,79.03,46.75,40.00,0.40,47.65,35.95,3.48,41.49,40.42,33.33
+31,Belgium,49.65,Semi-Periphery AI Nation,23.7,LD,26.859,"$23,772,123,495.80",748934,Europe & Eurasia,FALSE,,100.00,75.00,17.20,66.85,92.45,100.00,60.00,59.43,84.56,34.83,44.05,72.56,67.43,66.67
+161,Belize,20.08,Periphery AI Nation,15,,0.23127,"$123,299,500.00",9715,Central & South America,FALSE,,0.00,12.50,0.00,53.36,53.38,39.50,6.67,20.00,18.39,25.71,5.10,12.78,42.89,23.00
+122,Benin,25.27,Periphery AI Nation,4.4,EA+,0.3279,"$14,021,610.72",66467,Africa,FALSE,,40.00,75.00,0.00,45.56,35.41,62.50,60.00,54.85,71.25,34.57,12.68,38.16,36.47,33.33
+104,Bhutan,29.25,Periphery AI Nation,0,ED-,3.51179,"$1,288,128.11",14370,Indo-Pacific,FALSE,,30.00,0.00,3.29,59.35,46.82,48.75,53.33,65.00,81.22,22.73,24.85,38.28,41.91,25.67
+149,Bolivia (Plurinational State of),21.33,Periphery AI Nation,6.5,ED,3.5509,"$47,023,396.71",222560,Central & South America,TRUE,Bolivia,0.00,0.00,5.37,52.97,39.18,37.00,50.00,0.00,89.97,26.49,7.03,9.32,34.17,19.67
+120,Bosnia and Herzegovina,26.18,Periphery AI Nation,11.8,EA+,5.02419,"$521,779,854.27",99259,Europe & Eurasia,FALSE,,10.00,25.00,4.83,51.57,73.40,38.75,63.29,16.15,87.51,23.54,4.14,35.70,44.32,9.00
+100,Botswana,30.09,Periphery AI Nation,5.3,ED,1.0585,"$35,334,750.96",30651,Africa,FALSE,,30.00,12.50,5.37,51.43,63.60,61.25,60.00,10.00,68.21,22.95,23.75,38.15,30.74,33.33
+23,Brazil,54.68,Semi-Periphery AI Nation,0,ED+,261.59459,"$7,440,671,937.69",8317960,Central & South America,TRUE,Brazil,70.00,100.00,38.57,79.67,78.27,75.00,81.35,91.91,97.66,46.54,37.15,59.17,52.42,83.33
+95,Brunei Darussalam,30.67,Periphery AI Nation,47.8,,1.04484,"$15,156,737.35",17551,Indo-Pacific,FALSE,,40.00,25.00,4.83,68.08,69.26,43.50,26.61,61.78,68.51,33.31,20.18,24.37,53.84,30.00
+53,Bulgaria,41.89,Periphery AI Nation,8.8,ED,16.64658,"$4,781,510,000.00",362099,Europe & Eurasia,FALSE,,50.00,75.00,10.39,69.24,82.16,62.50,80.00,35.00,94.32,59.00,16.85,51.14,59.05,66.67
+173,Burkina Faso,18.28,Periphery AI Nation,4.4,CA,0.61335,"$89,572,559.09",33834,Africa,FALSE,,20.00,25.00,2.08,35.83,32.26,36.25,60.00,30.00,66.69,34.17,2.27,12.92,35.22,26.33
+195,Burundi,11.07,Periphery AI Nation,0,EA,0.22079,"$4,259,512.43",9617,Africa,FALSE,,10.00,12.50,0.00,18.12,31.75,3.25,20.00,40.00,32.87,23.29,2.77,13.64,33.23,0.00
+158,Cabo Verde,20.47,Periphery AI Nation,0,ED,0.22884,"$10,998,456.23",7526,Africa,FALSE,,20.00,12.50,0.00,55.69,49.32,20.75,50.23,65.87,67.23,17.33,5.53,13.92,46.82,26.33
+114,Cambodia,27.51,Periphery AI Nation,0,EA,5.50678,"$253,436,975.80",235476,Indo-Pacific,FALSE,,30.00,12.50,7.19,46.10,45.02,46.75,60.00,23.74,48.76,27.35,10.53,45.89,44.56,31.00
+109,Cameroon,28.42,Periphery AI Nation,0,EA,2.13572,"$189,161,798.41",139140,Africa,FALSE,,30.00,37.50,3.29,48.78,52.67,57.50,50.00,10.00,34.97,46.14,13.20,33.69,29.85,50.00
+7,Canada,65.9,Core AI Nation,34.2,ED+,155.60907,"$24,752,633,587.69",3991305,North America,TRUE,Canada,100.00,87.50,44.24,83.55,89.17,72.50,81.19,77.58,79.63,83.55,57.07,70.46,68.47,66.67
+194,Central African Republic,11.21,Periphery AI Nation,0,,,,868,Africa,FALSE,,10.00,12.50,0.00,26.12,41.79,4.50,0.00,0.00,27.82,16.75,3.25,10.78,23.55,0.00
+186,Chad,14.88,Periphery AI Nation,8,EA,0.3938,,6676,Africa,FALSE,,0.00,0.00,0.00,28.30,33.24,44.00,53.33,2.38,6.68,14.34,3.25,14.99,27.19,26.33
+41,Chile,45.44,Periphery AI Nation,4,LD-,40.26555,"$764,069,244.55",809093,Central & South America,TRUE,Chile,100.00,87.50,18.18,75.24,79.88,55.50,51.58,45.00,96.53,65.02,24.68,52.95,57.58,55.33
+2,China,77.14,Core AI Nation,24.7,CA,3825.4305,"$73,608,543,370.33",11351939,Indo-Pacific,TRUE,China,100.00,87.50,80.66,69.20,85.21,100.00,82.28,41.65,56.39,81.43,67.29,77.74,54.69,100.00
+56,Colombia,40.09,Periphery AI Nation,0,ED,21.34532,"$2,309,838,336.22",1670892,Central & South America,FALSE,,70.00,87.50,11.28,75.86,74.08,54.25,80.00,56.09,85.30,43.46,17.03,51.58,50.56,50.00
+179,Comoros,16.59,Periphery AI Nation,5.5,EA,0.03235,"$13,602,459.79",,Africa,FALSE,,0.00,12.50,0.00,48.80,46.66,20.25,0.23,30.87,38.07,15.00,3.25,14.03,28.72,26.33
+177,Congo,17.66,Periphery AI Nation,0,EA,0.99276,"$13,111,988.80",18243,Africa,FALSE,,30.00,0.00,0.00,39.20,28.04,42.75,20.23,0.87,6.90,21.37,1.42,36.06,29.78,11.00
+88,Costa Rica,32.13,Periphery AI Nation,8.8,LD,3.72502,"$2,667,838,385.16",231325,Central & South America,FALSE,,60.00,75.00,7.69,64.57,57.71,72.00,60.00,21.43,63.79,41.83,4.68,32.22,55.19,62.33
+87,Côte D'Ivoire,32.23,Periphery AI Nation,11.9,,,"$119,958,050.78",112935,Africa,FALSE,,50.00,62.50,5.84,59.38,58.42,61.25,60.00,0.00,38.05,36.22,11.22,41.97,48.39,66.67
+73,Croatia,36.24,Periphery AI Nation,0,ED,6.315,"$1,925,467,019.37",191502,Europe & Eurasia,FALSE,,30.00,37.50,8.50,64.17,83.44,75.00,66.28,55.00,88.34,29.06,15.17,50.46,56.76,33.33
+138,Cuba,22.65,Periphery AI Nation,2.9,CA,6.1662,,52084,Central & South America,FALSE,,60.00,37.50,0.00,55.30,42.56,50.00,20.48,3.27,5.75,29.97,5.10,20.85,36.87,59.67
+55,Cyprus,41.07,Periphery AI Nation,0,LD-,2.54137,"$10,030,920,648.08",96793,Europe & Eurasia,FALSE,,70.00,75.00,8.83,74.49,91.20,75.00,78.05,75.54,87.04,57.25,14.24,43.99,53.62,50.00
+29,Czechia,50.17,Semi-Periphery AI Nation,22,LD,22.47214,"$8,635,997,823.02",606127,Europe & Eurasia,FALSE,,90.00,75.00,15.76,72.03,88.03,75.00,73.29,46.15,92.52,75.26,32.55,61.48,68.82,66.67
+126,Democratic People's Republic of Korea,24.83,Periphery AI Nation,14,CA,8.52839,,,Indo-Pacific,FALSE,,0.00,0.00,0.00,41.13,54.09,0.00,23.28,6.78,0.73,46.58,11.67,50.42,38.35,11.00
+155,Democratic Republic of the Congo,20.7,Periphery AI Nation,2.3,EA,3.6465,"$2,513,902.75",66438,Africa,FALSE,,20.00,25.00,4.83,31.15,23.96,43.50,50.00,5.00,30.17,43.18,3.25,30.66,22.85,33.33
+22,Denmark,54.78,Semi-Periphery AI Nation,0,LD,19.8454,"$9,611,092,436.70",543334,Europe & Eurasia,FALSE,,100.00,87.50,12.74,76.07,89.72,100.00,88.05,70.54,99.98,70.04,44.33,67.23,80.02,100.00
+137,Djibouti,22.81,Periphery AI Nation,3.7,EA,0.183,"$80,518,861.54",5867,Africa,FALSE,,10.00,12.50,4.83,41.15,67.03,13.75,10.76,35.87,17.73,36.29,6.90,30.55,36.78,11.00
+171,Dominica,18.64,Periphery AI Nation,6.2,,0.02688,"$3,209,453.33",1803,Central & South America,FALSE,,10.00,0.00,0.00,57.30,46.19,5.25,13.82,3.27,47.00,18.13,5.10,18.04,46.33,0.00
+115,Dominican Republic,27.28,Periphery AI Nation,0,ED,7.98916,"$75,300,000.00",217451,Central & South America,FALSE,,40.00,75.00,4.16,58.75,47.66,60.75,50.00,66.98,74.26,32.42,2.42,38.98,45.04,33.33
+80,Ecuador,34.36,Periphery AI Nation,13,ED,8.13558,"$126,384,907.83",418829,Central & South America,FALSE,,60.00,87.50,6.90,72.03,63.08,73.25,50.00,70.00,88.63,50.64,15.09,22.37,41.98,66.67
+49,Egypt,42.58,Periphery AI Nation,0,EA,63.20353,"$2,061,400,000.00",1626418,Middle East & Central Asia,FALSE,,100.00,100.00,7.91,63.53,71.68,75.00,60.00,48.63,71.50,59.86,29.87,59.25,38.94,83.33
+105,El Salvador,28.79,Periphery AI Nation,0,EA,3.10124,"$455,265,617.46",136169,Central & South America,FALSE,,30.00,0.00,4.16,48.98,44.74,49.50,50.00,49.16,79.22,30.40,20.63,37.36,41.46,64.33
+181,Equatorial Guinea,16.15,Periphery AI Nation,3.2,EA,0.40111,,2289,Africa,FALSE,,0.00,0.00,2.08,30.53,51.67,37.50,0.23,0.87,4.83,23.86,3.25,14.03,29.91,24.67
+184,Eritrea,15.02,Periphery AI Nation,0,CA,0.20529,"$8,241,677.41",1628,Africa,FALSE,,0.00,0.00,0.00,29.02,47.04,0.00,13.33,0.00,0.00,13.10,3.25,35.78,27.38,0.00
+42,Estonia,45.04,Periphery AI Nation,0,LD,3.42936,"$3,907,740,648.39",149001,Europe & Eurasia,TRUE,Estonia,90.00,100.00,7.69,67.21,87.97,100.00,80.00,99.38,99.88,60.67,26.77,56.98,62.09,66.67
+162,Eswatini,20.03,Periphery AI Nation,0,CA,0.20463,"$5,985,175.34",7975,Africa,FALSE,,40.00,0.00,2.08,49.71,54.56,45.75,40.23,45.87,23.89,20.26,3.25,10.78,24.78,33.33
+91,Ethiopia,31.21,Periphery AI Nation,0,EA,10.15844,"$42,591,405.05",251351,Africa,FALSE,,30.00,62.50,5.37,42.17,37.80,59.75,50.00,35.00,54.30,56.79,20.25,45.22,31.52,66.67
+107,Fiji,28.53,Periphery AI Nation,16.7,ED-,0.41659,"$10,051,626.57",10906,Indo-Pacific,FALSE,,20.00,12.50,0.00,49.84,64.65,23.00,31.54,64.51,67.36,26.97,33.30,32.48,61.66,26.33
+21,Finland,55.42,Semi-Periphery AI Nation,4.7,LD,26.01623,"$14,309,364,752.57",538218,Europe & Eurasia,FALSE,Finland,70.00,87.50,19.27,72.79,92.83,87.50,80.89,74.30,89.24,79.96,42.21,73.78,90.67,33.33
+3,France,69.94,Core AI Nation,0,LD-,164.07812,"$29,318,580,351.01",4034001,Europe & Eurasia,TRUE,France,100.00,62.50,51.11,84.43,93.26,100.00,80.00,98.26,96.10,81.07,56.88,70.44,77.26,100.00
+129,Gabon,23.98,Periphery AI Nation,0,EA,0.862,"$2,132,050.13",16223,Africa,FALSE,,40.00,0.00,2.08,47.05,56.44,62.50,40.00,0.00,32.97,25.28,3.25,38.30,35.49,19.67
+170,Gambia (Republic of The),18.66,Periphery AI Nation,0,ED+,0.18469,"$1,479,038.09",8554,Africa,FALSE,,20.00,12.50,0.00,46.36,52.60,42.25,33.33,20.00,10.64,19.24,3.25,10.78,32.70,33.33
+85,Georgia,33.14,Periphery AI Nation,14.3,EA,5.03336,"$1,292,300,366.64",198539,Europe & Eurasia,FALSE,,10.00,25.00,4.83,65.67,77.54,75.00,73.33,35.00,59.88,43.61,0.76,46.18,42.92,26.33
+5,Germany,67.63,Core AI Nation,5,LD,276.14445,"$59,436,995,901.93",5255625,Europe & Eurasia,FALSE,,80.00,87.50,56.98,68.09,94.76,100.00,82.35,80.18,85.60,75.54,53.38,74.10,63.41,83.33
+75,Ghana,36.17,Periphery AI Nation,8.5,ED,5.87101,"$61,344,923.39",328387,Africa,FALSE,,40.00,62.50,6.59,70.92,60.87,62.50,70.00,25.00,81.71,34.23,22.57,47.92,33.63,50.00
+50,Greece,42.5,Periphery AI Nation,0,ED,30.44972,"$1,777,124,295.72",394067,Europe & Eurasia,FALSE,Greece,60.00,87.50,9.40,69.50,78.28,75.00,76.05,70.65,86.86,52.93,23.77,53.70,58.27,66.67
+176,Grenada,17.83,Periphery AI Nation,0,,0.07406,"$5,457,399.26",3085,Central & South America,FALSE,,0.00,0.00,0.00,49.34,47.91,38.75,0.48,3.27,37.64,15.23,5.10,18.04,44.88,0.00
+145,Guatemala,21.59,Periphery AI Nation,0,ED,3.82412,"$556,852,050.00",195658,Central & South America,FALSE,,20.00,12.50,6.24,45.78,61.59,29.00,60.00,35.00,41.34,24.47,0.65,14.46,32.30,26.33
+178,Guinea,16.95,Periphery AI Nation,3.3,CA,1.2402,"$36,860,000.00",15644,Africa,FALSE,,10.00,0.00,2.08,37.68,46.96,41.25,0.00,0.00,12.02,21.64,2.31,14.03,39.24,26.33
+190,Guinea Bissau,13.18,Periphery AI Nation,4.2,CA+,0.028,"$14,974,784.23",1521,Africa,FALSE,,10.00,0.00,2.08,31.27,36.36,0.00,20.23,0.87,3.18,16.64,3.25,14.03,29.31,0.00
+150,Guyana,21.28,Periphery AI Nation,0,ED-,0.26845,"$4,553,370.00",11193,Central & South America,FALSE,,20.00,12.50,2.08,56.49,48.30,45.25,33.33,10.00,29.39,16.07,5.10,18.04,43.38,18.67
+192,Haiti,12.65,Periphery AI Nation,0,CA,0.48175,"$2,000,000.00",29835,Central & South America,FALSE,,10.00,12.50,0.00,31.73,22.17,6.50,20.00,0.83,28.45,17.33,5.10,12.78,27.25,19.67
+166,Honduras,19.7,Periphery AI Nation,4,ED-,3.52467,"$36,388,048.86",103171,Central & South America,FALSE,,10.00,0.00,4.83,43.29,61.35,44.00,33.33,0.00,36.47,21.36,5.53,7.49,36.69,7.00
+45,Hungary,44.4,Periphery AI Nation,6.2,EA,15.6631,"$4,859,716,636.82",464901,Europe & Eurasia,FALSE,,80.00,75.00,8.98,72.59,86.49,87.50,77.12,80.86,84.36,72.81,20.02,51.29,58.35,50.00
+43,Iceland,44.89,Periphery AI Nation,7.4,LD,2.99783,"$866,512,543.80",42927,Europe & Eurasia,FALSE,,80.00,75.00,7.91,79.79,87.58,62.50,68.05,60.54,72.69,61.48,17.37,58.69,89.73,63.33
+19,India,56.86,Semi-Periphery AI Nation,34.4,EA,572.98154,"$200,343,788,282.56",26727004,Indo-Pacific,TRUE,India,90.00,100.00,48.50,65.28,76.15,62.50,65.56,71.19,86.96,58.83,47.14,61.15,35.58,83.33
+35,Indonesia,46.93,Semi-Periphery AI Nation,0,EA+,94.2544,"$4,089,565,622.03",5270032,Indo-Pacific,FALSE,,80.00,75.00,21.15,73.34,86.36,62.50,60.00,60.95,86.59,45.48,27.51,64.82,49.86,66.67
+72,Iran (Islamic Republic of),36.48,Periphery AI Nation,0,EA-,96.27069,,898557,Middle East & Central Asia,FALSE,,80.00,87.50,9.13,66.55,70.89,57.25,30.76,55.87,46.93,56.31,13.47,51.02,29.44,50.00
+103,Iraq,29.42,Periphery AI Nation,8.6,EA,35.09858,"$92,400,000.00",454373,Middle East & Central Asia,FALSE,,50.00,25.00,2.08,57.29,40.70,9.00,40.76,5.87,4.69,39.75,16.90,54.31,35.28,50.00
+20,Ireland,56.32,Semi-Periphery AI Nation,0,LD,13.76729,"$301,732,326,532.08",487502,Europe & Eurasia,TRUE,Ireland,90.00,87.50,32.34,66.61,95.20,100.00,89.14,51.33,96.92,76.69,40.78,58.63,70.50,50.00
+17,Israel,57.79,Semi-Periphery AI Nation,3.4,ED+,26.6641,"$59,759,500,000.00",935953,Middle East & Central Asia,TRUE,Israel,80.00,100.00,21.14,79.17,87.80,100.00,80.76,65.87,75.35,68.31,45.54,86.51,55.96,66.67
+13,Italy,59.63,Semi-Periphery AI Nation,7.4,LD-,143.68006,"$10,552,459,962.80",1989642,Europe & Eurasia,FALSE,,80.00,62.50,39.99,67.06,83.64,100.00,71.54,46.42,94.06,78.59,46.05,64.60,61.23,83.33
+117,Jamaica,27.23,Periphery AI Nation,40,ED,1.67785,"$127,565,622.58",58587,Central & South America,FALSE,,50.00,50.00,2.08,52.54,68.78,79.00,50.00,30.00,39.19,16.27,11.17,26.85,45.22,66.67
+6,Japan,66.01,Core AI Nation,46.4,LD,344.75052,"$14,737,077,018.26",5433912,Indo-Pacific,FALSE,,100.00,50.00,50.49,75.98,85.38,75.00,85.92,71.86,73.57,81.69,50.80,71.00,61.50,100.00
+65,Jordan,38.08,Periphery AI Nation,0,CA,7.2925,"$48,169,014.08",242986,Middle East & Central Asia,FALSE,,80.00,62.50,6.59,67.32,70.86,75.00,64.27,82.76,77.23,36.53,15.81,60.63,48.12,66.67
+58,Kazakhstan,39.58,Periphery AI Nation,10.3,EA,26.68369,"$1,355,233,820.00",463403,Middle East & Central Asia,FALSE,,70.00,100.00,7.91,74.35,79.39,75.00,54.25,61.20,85.98,72.11,11.11,45.90,41.44,33.33
+74,Kenya,36.18,Periphery AI Nation,3.7,ED-,3.465,"$853,401,195.56",678197,Africa,FALSE,,60.00,75.00,9.13,52.81,55.57,61.25,80.00,54.85,69.43,47.06,17.41,47.99,41.48,100.00
+128,Kiribati,24.07,Periphery AI Nation,20.6,,0.00836,"$369,250.75",520,Indo-Pacific,FALSE,,0.00,0.00,0.00,56.67,66.91,19.25,1.54,4.51,34.76,13.84,13.30,34.33,58.49,24.67
+79,Kuwait,34.65,Periphery AI Nation,34.8,CA,20.32686,"$6,252,957,273.99",112085,Middle East & Central Asia,FALSE,Kuwait,50.00,25.00,5.37,67.29,87.28,55.25,50.00,45.46,57.41,34.84,17.84,42.00,30.36,45.67
+118,Kyrgyzstan,26.64,Periphery AI Nation,4.2,EA,4.45138,,121507,Middle East & Central Asia,FALSE,,40.00,0.00,4.16,57.59,70.06,17.25,44.70,12.12,81.68,43.51,3.32,25.88,36.27,33.33
+119,Lao People's Democratic Republic,26.24,Periphery AI Nation,23.9,CA,14.33878,"$60,763,412.54",40818,Indo-Pacific,FALSE,,30.00,12.50,3.29,57.78,53.57,37.00,53.33,20.00,16.41,23.16,10.70,32.37,43.52,30.00
+57,Latvia,39.82,Periphery AI Nation,0,LD,3.82615,"$1,774,217,198.27",190889,Europe & Eurasia,FALSE,,50.00,87.50,9.77,63.08,86.35,75.00,89.70,67.65,95.23,56.31,13.06,50.21,61.83,33.33
+102,Lebanon,29.88,Periphery AI Nation,0,EA,3.50012,"$140,728,785.55",165282,Middle East & Central Asia,FALSE,,30.00,50.00,3.29,45.45,74.27,38.75,40.00,1.08,36.22,37.21,15.61,55.80,25.00,26.33
+160,Lesotho,20.17,Periphery AI Nation,28.8,ED,0.10328,"$15,666.63",10459,Africa,FALSE,,30.00,37.50,3.29,37.57,45.51,44.25,33.33,25.00,48.66,28.63,13.11,12.52,19.25,32.00
+191,Liberia,12.77,Periphery AI Nation,0,ED,0.18614,,11954,Africa,FALSE,,20.00,0.00,0.00,31.61,49.53,7.00,0.00,10.00,39.83,20.90,3.25,7.34,27.71,0.00
+121,Libya,26.12,Periphery AI Nation,25.8,CA,11.41914,"$11,900,000.00",73665,Africa,TRUE,Libya,60.00,25.00,5.84,54.47,71.09,29.75,20.00,2.17,2.02,28.51,6.90,25.22,31.88,63.33
+84,Liechtenstein,33.17,Periphery AI Nation,24.4,,,,3056,Europe & Eurasia,FALSE,,10.00,25.00,6.24,64.95,69.58,48.75,48.05,30.54,68.54,29.78,27.01,29.80,74.31,19.67
+44,Lithuania,44.87,Periphery AI Nation,0,LD-,7.669,"$3,583,933,605.54",227028,Europe & Eurasia,FALSE,,70.00,87.50,8.98,68.40,87.95,94.75,88.60,80.00,88.60,68.62,25.68,48.99,67.38,46.67
+36,Luxembourg,46.59,Periphery AI Nation,37.4,LD,1.20426,"$5,705,794,078.00",61847,Europe & Eurasia,FALSE,,90.00,75.00,12.18,70.95,89.82,75.00,88.05,65.54,85.39,64.26,27.06,53.85,66.41,66.67
+180,Madagascar,16.42,Periphery AI Nation,0,EA,0.86391,"$294,407,364.21",81275,Africa,FALSE,,0.00,0.00,4.16,32.38,45.58,36.75,23.56,5.87,55.86,26.12,2.24,10.65,32.08,7.00
+148,Malawi,21.39,Periphery AI Nation,0,ED-,0.61492,"$161,059,368.79",35746,Africa,FALSE,,20.00,25.00,2.08,44.52,39.50,45.75,30.00,0.00,11.56,22.93,0.79,37.90,37.86,33.33
+28,Malaysia,50.75,Semi-Periphery AI Nation,9.4,ED-,39.24855,"$4,623,972,785.34",1139033,Indo-Pacific,FALSE,,70.00,87.50,19.78,76.92,84.88,75.00,81.97,65.60,63.95,77.41,32.08,64.37,43.32,33.33
+133,Maldives,23.35,Periphery AI Nation,0,ED-,0.3195,"$46,894,839.10",22798,Indo-Pacific,FALSE,,20.00,0.00,3.29,49.08,65.93,33.50,11.37,2.12,57.05,18.77,4.85,37.53,38.14,26.33
+164,Mali,19.77,Periphery AI Nation,23.5,CA,1.02076,"$172,162,628.15",21292,Africa,FALSE,,10.00,0.00,2.08,36.59,49.94,36.00,40.00,20.00,33.34,19.46,2.23,37.97,29.94,5.33
+47,Malta,43.62,Periphery AI Nation,4.7,ED+,0.85663,"$448,442,444.62",43600,Europe & Eurasia,FALSE,,80.00,75.00,7.19,67.92,81.64,87.50,88.05,65.54,67.62,66.20,25.60,46.86,63.72,66.67
+143,Marshall Islands,21.82,Periphery AI Nation,7.4,,0.04197,"$317,697.24",340,Indo-Pacific,FALSE,,0.00,0.00,0.00,51.64,69.71,1.25,1.54,4.51,8.96,9.51,13.30,34.33,59.40,0.00
+174,Mauritania,18.24,Periphery AI Nation,3.3,EA,0.60481,"$2,831,044.33",16255,Africa,FALSE,,30.00,37.50,0.00,33.23,52.67,57.50,23.56,30.87,29.22,36.73,3.90,11.38,29.03,18.67
+66,Mauritius,37.97,Periphery AI Nation,24.4,ED+,0.95699,"$171,025,852.88",50296,Africa,FALSE,,70.00,62.50,7.19,69.22,69.76,75.00,70.00,50.00,81.26,67.38,14.45,41.74,40.19,33.33
+68,Mexico,37.67,Periphery AI Nation,0,EA+,122.80961,"$3,255,094,101.00",2865151,North America,TRUE,Mexico,50.00,25.00,12.47,63.83,80.00,71.25,64.04,54.87,77.34,34.36,19.60,53.06,40.11,24.33
+151,Micronesia (Federated States of),21.19,Periphery AI Nation,0,,0.04826,,570,Indo-Pacific,FALSE,,21.67,18.75,0.00,49.23,36.75,6.25,9.04,11.18,6.55,17.08,19.14,31.26,60.26,8.33
+71,Monaco,36.77,Periphery AI Nation,0,,,,3256,Europe & Eurasia,FALSE,,30.00,0.00,4.16,69.33,70.57,46.75,68.05,10.54,28.59,28.55,37.01,38.59,76.41,26.33
+113,Mongolia,27.82,Periphery AI Nation,4.4,ED-,1.8725,"$61,798,307.84",89495,Indo-Pacific,FALSE,,50.00,25.00,5.84,58.96,68.32,48.00,50.00,60.00,78.80,28.76,1.43,37.68,41.34,26.33
+101,Montenegro,29.97,Periphery AI Nation,3.2,ED+,1.1477,"$193,625,414.82",29425,Europe & Eurasia,FALSE,,30.00,25.00,0.00,62.87,58.00,47.50,60.00,25.03,79.54,24.06,27.85,28.47,56.60,33.33
+78,Morocco,35.32,Periphery AI Nation,0,CA,11.40693,"$2,804,458,304.54",906406,Africa,TRUE,Morocco,20.00,25.00,7.69,58.63,78.04,87.50,70.00,10.00,59.80,29.75,14.44,53.70,46.23,33.33
+167,Mozambique,19.69,Periphery AI Nation,0,EA,2.6009,"$9,116,548.23",48751,Africa,FALSE,,20.00,0.00,5.84,52.88,28.92,18.25,43.33,20.00,22.40,21.30,2.16,14.02,37.51,33.33
+141,Myanmar,22.01,Periphery AI Nation,,CA,7.02881,"$149,715,842.22",199199,,FALSE,,20.00,0.00,5.37,55.47,38.91,14.00,13.33,0.00,24.65,28.62,10.91,18.72,36.82,21.00
+116,Namibia,27.25,Periphery AI Nation,0,ED-,0.9157,"$26,028,082.63",22072,Africa,FALSE,,30.00,12.50,3.29,35.46,65.79,55.75,50.00,31.36,58.24,49.40,13.76,26.30,34.63,59.67
+132,Nauru,23.43,Periphery AI Nation,60,,0.02871,,110,Indo-Pacific,FALSE,,0.00,0.00,0.00,53.18,71.95,4.50,11.54,4.51,31.10,17.94,13.30,34.33,58.65,0.00
+112,Nepal,28.16,Periphery AI Nation,26.5,ED,3.9874,,486967,Indo-Pacific,TRUE,Nepal,30.00,62.50,6.90,52.24,54.99,60.75,53.72,4.56,61.20,38.55,0.68,35.55,31.21,66.67
+11,Netherlands,62.56,Semi-Periphery AI Nation,9.6,LD,62.6244,"$29,340,716,452.60",2185318,Europe & Eurasia,TRUE,Netherlands,80.00,100.00,39.17,81.49,88.87,100.00,88.38,90.00,98.03,78.49,46.51,67.82,66.55,66.67
+34,New Zealand,47.25,Semi-Periphery AI Nation,64.5,LD,11.24188,"$1,107,097,583.41",441201,Indo-Pacific,FALSE,New Zealand,80.00,100.00,12.18,71.42,88.12,73.75,70.00,80.00,48.63,57.24,32.49,63.88,68.93,59.67
+175,Nicaragua,18.05,Periphery AI Nation,0,EA,1.63901,"$252,300,000.00",69807,Central & South America,FALSE,,0.00,12.50,4.16,38.39,44.15,39.50,43.82,3.27,36.23,21.54,0.68,17.23,41.27,0.00
+193,Niger,12.33,Periphery AI Nation,4.2,CA,0.5206,"$70,015,402.39",9598,Africa,TRUE,Niger,0.00,0.00,0.00,17.72,37.58,44.50,33.33,0.00,32.71,16.96,2.18,10.78,33.91,11.00
+69,Nigeria,37.5,Periphery AI Nation,5.6,ED-,14.53693,"$107,979,745.21",1794519,Africa,FALSE,,70.00,87.50,9.27,63.67,44.36,86.25,70.00,40.00,54.93,48.90,28.79,44.23,18.66,66.67
+110,North Macedonia,28.41,Periphery AI Nation,3.1,ED-,3.22022,"$764,410,217.70",81773,Europe & Eurasia,FALSE,,30.00,37.50,6.24,52.18,64.95,48.76,41.23,10.00,83.10,37.22,12.16,29.39,44.62,33.33
+18,Norway,57.77,Semi-Periphery AI Nation,0,LD,41.25935,"$5,666,436,945.86",510054,Europe & Eurasia,FALSE,,70.00,100.00,18.92,86.09,92.01,100.00,88.05,70.54,97.79,79.77,38.45,70.87,88.33,66.67
+60,Oman,39.4,Periphery AI Nation,24,CA,12.58908,"$393,434,459.04",95170,Middle East & Central Asia,FALSE,,90.00,87.50,8.31,71.44,61.91,74.00,70.00,55.31,86.69,50.29,20.83,56.25,48.85,33.33
+77,Pakistan,35.77,Periphery AI Nation,6.2,EA,50.26116,"$4,185,000,000.00",2497496,Middle East & Central Asia,FALSE,,60.00,62.50,9.99,56.20,57.49,62.50,60.00,13.92,59.10,51.25,17.91,48.02,33.75,66.67
+130,Palau,23.93,Periphery AI Nation,19.2,,0.04948,"$164,000.00",397,Indo-Pacific,FALSE,,10.00,0.00,0.00,59.22,65.21,9.52,1.54,4.51,40.22,14.61,13.30,34.33,61.39,15.53
+99,Panama,30.4,Periphery AI Nation,0,ED,5.2878,"$501,332,378.97",96375,Central & South America,FALSE,,20.00,25.00,8.67,67.14,83.27,43.50,40.00,60.65,62.01,28.19,3.65,36.43,39.46,22.00
+146,Papua New Guinea,21.45,Periphery AI Nation,33.7,EA,0.64749,"$196,375.58",16631,Indo-Pacific,FALSE,,20.00,12.50,2.08,44.39,47.22,29.00,26.61,56.78,29.23,24.50,11.67,24.37,30.06,33.33
+111,Paraguay,28.33,Periphery AI Nation,0,ED,8.84727,"$519,331,142.83",93779,Central & South America,FALSE,,30.00,0.00,5.84,61.25,72.04,57.25,53.33,33.32,66.78,26.84,0.72,36.03,40.19,29.00
+76,Peru,36.05,Periphery AI Nation,0,ED,16.02342,"$174,917,518.64",907052,Central & South America,FALSE,,50.00,87.50,8.12,64.58,63.86,75.00,70.00,84.86,95.94,38.12,14.83,47.35,44.48,66.67
+52,Philippines,42.47,Periphery AI Nation,0,EA,31.8478,"$8,827,634,084.76",2815527,Indo-Pacific,FALSE,,80.00,87.50,10.39,63.02,75.10,87.50,79.18,43.21,95.14,64.65,17.32,58.79,49.68,66.67
+26,Poland,53.94,Semi-Periphery AI Nation,0,ED,71.84035,"$22,112,000,000.00",2074728,Europe & Eurasia,FALSE,,90.00,100.00,33.27,73.22,87.87,100.00,70.00,54.59,95.09,52.98,36.11,56.14,55.79,95.67
+30,Portugal,49.72,Semi-Periphery AI Nation,0,ED,26.87355,"$5,309,029,498.95",740488,Europe & Eurasia,FALSE,Portugal,50.00,62.50,11.67,72.11,82.36,100.00,87.11,69.05,94.69,66.16,37.30,60.32,72.69,66.67
+46,Qatar,43.86,Periphery AI Nation,13.7,CA,12.2861,"$578,021,978.02",109057,Middle East & Central Asia,TRUE,Qatar,70.00,87.50,7.45,78.27,88.12,75.00,80.00,52.51,73.14,55.95,25.10,59.04,44.56,33.33
+8,Republic of Korea,64.64,Core AI Nation,8.1,LD,157.14698,"$18,720,800,000.00",3145730,Indo-Pacific,TRUE,South Korea,90.00,100.00,40.81,78.56,85.27,100.00,81.45,66.96,91.50,70.07,50.65,82.00,65.42,100.00
+90,Republic of Moldova,31.21,Periphery AI Nation,0,ED-,,"$893,128,490.84",140751,Europe & Eurasia,FALSE,,60.00,62.50,5.84,57.19,79.62,50.00,63.33,80.00,84.66,32.62,11.14,27.19,55.46,66.67
+54,Romania,41.86,Periphery AI Nation,0,ED,22.4936,"$13,020,041,811.32",795527,Europe & Eurasia,FALSE,,60.00,100.00,12.56,69.51,83.60,75.00,68.43,28.45,82.87,52.54,17.05,51.60,58.44,59.67
+33,Russian Federation,47.96,Semi-Periphery AI Nation,0,EA,252.20576,"$2,698,030,000.00",4627668,Europe & Eurasia,TRUE,Russia,70.00,62.50,21.43,66.60,83.67,75.00,73.29,66.15,73.42,59.58,38.55,54.48,44.25,50.00
+89,Rwanda,31.35,Periphery AI Nation,0,EA,0.32214,"$34,451,932.61",87857,Africa,FALSE,,70.00,75.00,4.16,52.70,44.90,87.50,70.00,40.98,66.27,37.61,11.94,44.34,44.57,66.67
+163,Saint Kitts and Nevis,19.8,Periphery AI Nation,0,,,,1741,Central & South America,FALSE,,10.00,12.50,0.00,55.44,45.73,38.75,20.48,3.27,7.60,17.95,5.10,18.04,46.98,9.00
+153,Saint Lucia,20.86,Periphery AI Nation,6.2,,,,4283,Central & South America,FALSE,,10.00,0.00,0.00,51.52,68.97,38.75,30.00,28.43,45.57,18.50,5.10,18.04,45.31,0.00
+172,Saint Vincent and the Grenadines,18.33,Periphery AI Nation,12.2,,,"$3,014,697.41",2176,Central & South America,FALSE,,10.00,12.50,0.00,50.16,47.61,33.50,0.48,3.27,47.27,18.51,5.10,18.04,45.31,7.00
+140,Samoa,22.5,Periphery AI Nation,18.4,,0.05966,"$26,864,236.51",830,Indo-Pacific,FALSE,,10.00,0.00,0.00,57.88,53.93,7.25,11.54,4.51,46.59,6.18,13.30,34.33,61.66,21.00
+93,San Marino,30.71,Periphery AI Nation,8.5,,,,1381,Europe & Eurasia,FALSE,,30.00,25.00,0.00,54.37,69.16,53.25,38.05,30.54,17.19,49.60,17.01,38.59,72.00,11.00
+182,Sao Tome and Principe,16.15,Periphery AI Nation,7.4,ED,0.04288,"$493,541.19",859,Africa,FALSE,,0.00,0.00,0.00,41.92,46.65,35.50,20.23,0.87,30.39,15.08,3.25,14.03,32.16,7.00
+25,Saudi Arabia,54.21,Semi-Periphery AI Nation,5.4,CA,101.052,"$2,509,479,111.88",988061,Middle East & Central Asia,FALSE,Saudi Arabia,80.00,100.00,25.94,75.02,87.83,100.00,86.41,85.99,91.25,69.52,36.20,63.82,48.12,66.67
+96,Senegal,30.58,Periphery AI Nation,3.7,ED,2.32648,"$128,356,504.13",91364,Africa,FALSE,,40.00,75.00,6.24,46.48,58.37,66.75,60.00,20.00,36.95,43.25,15.06,41.30,39.75,33.33
+62,Serbia,39.17,Periphery AI Nation,6.5,EA,8.57791,"$5,146,715,244.93",325368,Europe & Eurasia,FALSE,,100.00,100.00,7.91,67.63,82.70,75.00,82.29,80.00,87.85,41.44,23.42,46.62,55.50,33.33
+139,Seychelles,22.59,Periphery AI Nation,33.9,LD,0.12814,"$10,532,979.33",26777,Africa,FALSE,,20.00,0.00,2.08,59.80,69.38,45.75,33.56,0.87,53.10,22.49,2.37,13.60,40.34,11.00
+187,Sierra Leone,14.61,Periphery AI Nation,0,EA+,0.23463,"$1,569,039.27",16670,Africa,FALSE,,50.00,12.50,0.00,32.83,44.08,18.50,13.33,21.01,9.56,30.81,3.25,1.21,29.00,33.33
+9,Singapore,64.63,Core AI Nation,33.5,EA,12.91682,"$33,599,143,370.68",2170580,Indo-Pacific,TRUE,Singapore,100.00,75.00,41.99,86.39,95.01,75.00,81.60,93.92,91.08,85.17,44.31,69.59,52.85,100.00
+64,Slovakia,38.32,Periphery AI Nation,0,ED,7.471,"$2,379,368,027.09",212894,Europe & Eurasia,FALSE,,10.00,25.00,7.91,75.51,83.98,75.00,70.00,40.00,84.24,40.35,8.13,53.43,59.91,33.33
+38,Slovenia,46.06,Periphery AI Nation,0,ED,4.84208,"$1,384,562,488.72",117306,Europe & Eurasia,FALSE,,60.00,100.00,12.96,76.60,84.39,75.00,70.00,56.28,96.60,63.78,22.26,58.27,71.97,50.00
+144,Solomon Islands,21.61,Periphery AI Nation,8.1,ED,0.04708,"$2,541,793.25",1533,Indo-Pacific,FALSE,,10.00,0.00,2.08,42.29,56.72,13.75,11.54,4.51,37.42,16.11,13.30,34.33,55.10,11.00
+156,Somalia,20.58,Periphery AI Nation,0,CA,0,,72309,Africa,FALSE,,0.00,25.00,2.08,36.35,36.87,37.25,13.33,15.00,7.43,19.19,13.25,37.58,26.36,33.33
+40,South Africa,45.9,Periphery AI Nation,0,ED,67.28849,"$1,706,339,819.33",1058997,Africa,FALSE,,70.00,25.00,29.64,75.14,75.36,75.00,78.17,41.19,88.68,41.09,21.30,54.78,38.63,43.00
+189,South Sudan,13.56,Periphery AI Nation,0,CA,0.074,"$35,640,000.00",7034,Africa,FALSE,,0.00,0.00,0.00,32.29,40.88,9.25,0.00,0.00,3.76,19.73,3.25,14.03,27.79,17.67
+15,Spain,59.08,Semi-Periphery AI Nation,0,LD,142.47471,"$26,644,819,992.20",2802085,Europe & Eurasia,FALSE,Spain,80.00,100.00,25.03,80.40,91.73,87.50,88.45,67.28,89.14,80.32,47.40,63.08,63.41,100.00
+83,Sri Lanka,33.23,Periphery AI Nation,30,ED,6.87387,"$971,460,298.34",541411,Indo-Pacific,FALSE,,50.00,87.50,3.29,62.44,66.53,73.25,40.00,24.25,63.73,46.10,17.08,42.16,35.18,43.00
+94,State of Palestine,30.7,Periphery AI Nation,,,,,,,FALSE,,50.00,37.50,2.08,56.44,72.06,11.50,23.33,17.00,72.16,37.10,26.90,52.30,34.20,0.00
+183,Sudan,15.41,Periphery AI Nation,0,CA,3.08729,"$912,664.03",49732,Africa,FALSE,,0.00,0.00,2.08,37.47,33.95,14.50,20.23,0.87,28.23,19.75,3.25,15.82,19.72,26.33
+168,Suriname,19.68,Periphery AI Nation,4.7,ED,0.58143,"$18,200,862.08",8887,Central & South America,FALSE,,0.00,0.00,3.29,51.79,49.64,38.75,0.48,3.27,12.03,20.48,5.10,18.04,39.72,3.33
+16,Sweden,58.11,Semi-Periphery AI Nation,4,LD,54.6186,"$27,243,794,901.26",1029024,Europe & Eurasia,FALSE,Sweden,72.61,100.00,34.06,79.12,89.29,75.00,88.05,50.54,97.09,52.60,47.24,74.50,89.01,33.33
+12,Switzerland,60.33,Semi-Periphery AI Nation,20,LD,29.45983,"$25,072,781,471.68",781300,Europe & Eurasia,FALSE,,60.00,25.00,31.63,83.77,91.52,100.00,78.40,72.84,75.02,60.33,51.77,75.34,86.35,33.33
+147,Syrian Arab Republic,21.44,Periphery AI Nation,,,8.92971,"$140,657,918.97",67957,,FALSE,,10.00,0.00,0.00,54.82,44.78,39.50,20.76,5.87,7.67,24.42,6.90,22.47,32.14,33.33
+27,Taiwan,52.43,Semi-Periphery AI Nation,3.7,LD,,,1890259,Indo-Pacific,TRUE,Taiwan,60.00,91.91,22.20,69.14,79.75,56.43,81.53,77.15,61.74,76.45,38.76,63.38,55.76,94.39
+159,Tajikistan,20.18,Periphery AI Nation,0,EA,6.54069,"$2,982,910.00",26111,Middle East & Central Asia,FALSE,,60.00,50.00,0.00,42.31,19.73,34.25,43.33,2.94,44.44,34.11,0.78,35.63,40.34,36.33
+32,Thailand,48.28,Semi-Periphery AI Nation,42.8,EA,61.60372,"$465,579,231.25",1570196,Indo-Pacific,FALSE,,70.00,100.00,21.34,70.85,76.96,75.00,65.88,77.69,94.03,68.01,36.24,58.94,41.36,33.33
+169,Timor-Leste,19.63,Periphery AI Nation,0,ED,0.3169,"$6,501,444.41",3545,Indo-Pacific,FALSE,,10.00,0.00,0.00,53.41,19.77,3.50,3.28,11.78,33.51,25.40,11.67,34.13,41.80,5.33
+154,Togo,20.84,Periphery AI Nation,0,EA,0.34019,"$35,585,472.61",40421,Africa,FALSE,,40.00,0.00,3.29,45.33,47.75,50.00,60.00,45.91,36.18,23.05,2.95,13.16,37.41,33.33
+135,Tonga,23.05,Periphery AI Nation,35,,0.03616,"$113,498.77",778,Indo-Pacific,FALSE,,10.00,0.00,0.00,59.64,37.84,3.25,11.54,14.51,41.30,35.40,13.30,27.09,58.38,7.00
+124,Trinidad and Tobago,24.99,Periphery AI Nation,9.7,LD-,2.13688,"$42,093,408.73",41845,Central & South America,FALSE,,20.00,25.00,4.83,64.19,70.87,31.00,50.00,21.43,60.75,23.08,4.73,12.79,37.35,30.00
+81,Tunisia,34.19,Periphery AI Nation,0,EA,7.269,"$516,932,907.37",420582,Africa,FALSE,,30.00,12.50,4.83,56.95,69.05,48.00,70.00,50.00,52.38,53.54,15.64,47.88,40.18,33.33
+48,Türkiye,43.19,Periphery AI Nation,0,EA,122.80279,"$5,336,000,000.00",2544065,Europe & Eurasia,FALSE,,80.00,75.00,13.29,70.07,74.92,75.00,61.37,57.12,98.06,74.52,12.69,60.89,44.53,50.00
+136,Turkmenistan,23,Periphery AI Nation,5.9,CA+,7.00231,,7738,Middle East & Central Asia,FALSE,,10.00,12.50,0.00,57.75,40.07,34.25,13.33,10.00,6.27,31.03,4.85,37.53,29.33,26.33
+127,Tuvalu,24.25,Periphery AI Nation,18.4,,0.0048,"$146,061.49",,Indo-Pacific,FALSE,,0.00,0.00,0.00,52.15,66.26,2.50,1.54,14.51,4.86,17.94,23.30,34.33,56.60,3.33
+125,Uganda,24.95,Periphery AI Nation,3.4,EA,2.01495,"$48,478,909.46",147165,Africa,FALSE,,30.00,0.00,4.83,52.84,44.09,41.50,50.00,60.00,81.67,25.59,1.61,41.99,33.97,33.33
+51,Ukraine,42.48,Periphery AI Nation,0,EA,24.36,"$6,610,000,000.00",1729006,Europe & Eurasia,FALSE,,90.00,62.50,10.99,66.37,79.84,73.75,92.25,60.84,99.63,45.88,27.60,51.81,56.76,59.67
+14,United Arab Emirates,59.36,Semi-Periphery AI Nation,20.7,CA,51.27353,"$8,304,969,366.92",656185,Middle East & Central Asia,TRUE,UAE,70.00,75.00,40.49,86.75,94.06,75.00,70.00,96.63,97.91,71.72,38.61,67.95,52.98,33.33
+4,United Kingdom of Great Britain and Northern Ireland,68.07,Core AI Nation,0,ED+,108.07939,"$64,962,179,229.66",5559767,Europe & Eurasia,TRUE,UK,100.00,100.00,50.34,70.57,96.55,100.00,84.55,85.02,52.84,70.05,61.70,75.90,66.59,100.00
+97,United Republic of Tanzania,30.45,Periphery AI Nation,,,,,,,FALSE,,20.00,12.50,7.45,50.97,45.62,62.50,70.00,60.00,78.48,21.86,20.96,47.63,38.64,33.33
+1,United States of America,89.04,Core AI Nation,0,ED+,1300.4492,"$102,266,000,000.00",32410529,North America,TRUE,USA,100.00,87.50,90.92,89.61,94.77,75.00,90.00,87.90,97.84,74.56,100.00,85.96,56.55,100.00
+59,Uruguay,39.48,Periphery AI Nation,0,LD-,5.27806,"$1,502,706,315.04",160501,Central & South America,TRUE,Uruguay,60.00,62.50,7.19,76.44,85.94,99.00,70.00,77.85,88.58,38.56,13.94,46.84,54.71,50.00
+61,Uzbekistan,39.35,Periphery AI Nation,3.4,CA+,27.79717,"$921,500,245.55",395040,Middle East & Central Asia,FALSE,,70.00,87.50,5.84,62.26,73.06,74.00,84.25,63.97,64.87,72.95,21.01,45.14,42.75,33.33
+123,Vanuatu,25.26,Periphery AI Nation,13,ED+,0.0331,"$6,448,986.52",1289,Indo-Pacific,FALSE,,20.00,12.50,0.00,60.97,61.22,15.75,21.54,9.51,49.42,16.46,13.30,34.33,55.96,33.33
+142,"Venezuela, Bolivarian Republic of",21.85,Periphery AI Nation,2.7,EA,35.66854,"$64,000,000.00",345018,Central & South America,FALSE,,20.00,12.50,5.84,53.21,59.89,25.75,13.82,8.27,46.44,24.99,0.58,16.79,43.10,33.33
+39,Viet Nam,46.01,Periphery AI Nation,0,CA,87.59966,,2972715,Indo-Pacific,FALSE,,40.00,62.50,10.66,77.94,83.62,100.00,76.09,62.22,84.20,66.53,22.12,60.74,53.23,33.33
+185,Yemen,14.92,Periphery AI Nation,6.3,CA,1.67775,"$118,100,000.00",146772,Middle East & Central Asia,FALSE,,0.00,0.00,0.00,46.15,13.30,30.75,0.76,5.87,28.44,26.95,6.90,15.08,14.92,0.00
+92,Zambia,30.72,Periphery AI Nation,0,EA+,4.1451,"$25,034,545.85",64531,Africa,FALSE,,40.00,62.50,4.16,53.01,48.56,62.50,60.00,48.84,58.15,34.12,21.26,37.79,33.54,66.67
+134,Zimbabwe,23.29,Periphery AI Nation,0,EA,3.13228,"$14,930,000.00",84670,Africa,FALSE,,30.00,0.00,4.16,29.39,54.56,56.00,50.00,20.00,35.25,23.17,13.27,35.79,36.56,26.33
