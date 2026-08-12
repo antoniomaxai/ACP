@@ -270,8 +270,9 @@ fig_b = px.scatter(
     x="PlotBC_X", 
     y="PlotBC_Y", 
     color="KPIs-R_base",
-    size="Score",  # NEW: Size dots proportionally to Score
+    size="Score",  
     hover_name="Country",
+    text="Display_Label",
     # hover_data={"PlotBC_X": False, "PlotBC_Y": False, "Classification": True, "KPIs-R": True, "Score": ":.2f"},
     custom_data=["KPIs-R_base","KPIs-R", "Classification", "Score"],
     category_orders={"KPIs-R_base": [
@@ -281,7 +282,7 @@ fig_b = px.scatter(
         "CA - Closed Autocracy"
     ]},
     color_discrete_sequence=px.colors.qualitative.Set3,
-    size_max=25 # Adjust max bubble size for Plot B
+    size_max=25 # Adjust max bubble size
 )
 fig_b.update_traces(
     marker=dict(opacity=0.8, line=dict(width=1, color='White')), 
@@ -322,10 +323,11 @@ fig_c = px.scatter(
     size="KPIs-PC_plot", 
     color="Region",
     hover_name="Country",
+    text="Display_Label",
     # hover_data={"PlotBC_X": False, "PlotBC_Y": False, "Classification": True, "Score": ":.2f"},
     custom_data=["Region", "Classification", "Score"],
     color_discrete_sequence=px.colors.qualitative.Set2,
-    size_max=50 # Adjust max bubble size here
+    size_max=50 # Adjust max bubble size
 )
 fig_c.update_traces(
     marker=dict(opacity=0.7, line=dict(width=1, color='White')),
@@ -364,7 +366,7 @@ Dot size represents Total Installed Capacity (GW), sourced from the [Internation
 df["KPIs-E_plot"] = pd.to_numeric(df["KPIs-E"], errors="coerce").fillna(0)
 df["KPIs-E_plot"] = df["KPIs-E_plot"].apply(lambda x: 1 if x <= 0 else x)
 
-# Filter out empty regime types to keep the legend clean, matching Plot B
+# Filter out empty regime types to keep the legend clean
 df_d = df.dropna(subset=["KPIs-R"]).copy()
 
 fig_d = px.scatter(
