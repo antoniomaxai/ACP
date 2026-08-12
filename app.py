@@ -188,10 +188,10 @@ st.divider()
 # Creates 3 columns with a 1:2:1 ratio. The middle column takes up 50% of the space.
 col1, col2, col3 = st.columns([1, 2, 1]) 
 with col2:
-    st.image("ACP-33.png", use_container_width=True, caption="The AI Core–Periphery Framework")
+    st.image("ACP-33.png", use_container_width=True, caption="The AI Core-Periphery Framework")
 
 st.write("""
-This analysis applies Antonio Max’s [AI Core–Periphery (ACP) Framework](https://antoniomax.substack.com/p/techno-economic-protagonism-and-ai), an adaptation of Immanuel Wallerstein’s [world-systems theory](https://en.wikipedia.org/wiki/World-systems_theory) to the emerging political economy of artificial intelligence. The framework extends the core–periphery model to examine the techno-economic asymmetries that AI is consolidating among states, with particular attention to the distribution of AI capabilities, infrastructures, data, technological dependencies, and market power.
+This analysis applies Antonio Max's [AI Core-Periphery (ACP) Framework](https://antoniomax.substack.com/p/techno-economic-protagonism-and-ai), an adaptation of Immanuel Wallerstein's [world-systems theory](https://en.wikipedia.org/wiki/World-systems_theory) to the emerging political economy of artificial intelligence. The framework extends the core-periphery model to examine the techno-economic asymmetries that AI is consolidating among states, with particular attention to the distribution of AI capabilities, infrastructures, data, technological dependencies, and market power.
 
 At its core, the ACP Framework asks: *Where does each country sit within the global distribution of AI capability, data, and power?*
     
@@ -202,11 +202,11 @@ At its core, the ACP Framework asks: *Where does each country sit within the glo
 
 ##### ACP Ranking:
 
-The ACP Ranking is derived from a customized weighted composite of Oxford Insights’ [Government AI Readiness Index (2025)](https://oxfordinsights.com/ai-readiness/government-ai-readiness-index-2025/). The original pillars and corresponding weights are provided in their [methodology report](https://oxfordinsights.com/wp-content/uploads/2026/05/Methodology-Report-2025-1.pdf) and reproduced on the sidebar.
+The ACP Ranking is derived from a customized weighted composite of Oxford Insights' [Government AI Readiness Index (2025)](https://oxfordinsights.com/ai-readiness/government-ai-readiness-index-2025/). The original pillars and corresponding weights are provided in their [methodology report](https://oxfordinsights.com/wp-content/uploads/2026/05/Methodology-Report-2025-1.pdf) and reproduced on the sidebar.
          
-The ACP weighting scheme modifies original weights to emphasize variables considered more directly indicative of structural AI capability. In particular, AI Infrastructure receives a substantially greater weight, while Public Sector Adoption and Policy Capacity are comparatively downweighted, treated as partially orthogonal to the core–periphery dimension being modeled.
-
-The resulting classification is therefore not intended to reproduce/modify Oxford Insights’ original ranking. Rather, it repurposes its underlying weights to construct an analytical measure of countries’ relative position within the emerging global political economy of AI.
+The ACP weighting scheme adjusts original weights to emphasize variables more directly indicative of structural AI capability. In particular, AI Infrastructure receives a substantially greater weight, while Public Sector Adoption and Policy Capacity are downweighted, treated as partially orthogonal to the core-periphery proposition.
+         
+While possible, the resulting score is not intended to reproduce Oxford Insights' ranking, but to use its underlying indicators to estimate countries' relative position in the global AI economy.
 """)
 
 st.divider()
@@ -256,7 +256,7 @@ st.divider()
 # --- PLOT B: Political Types ---
 st.subheader("B) ACP Distribution by Regime Type")
 st.markdown("""
-This graph presents the ACP segmentation based on V-Dem’s 2026 data. Countries are classified according to their latest regime typology, with dots sized according to their ACP rank/score and a minimum size applied for visibility. V-Dem’s original ranking table is available at https://www.v-dem.net.
+This graph presents the ACP segmentation based on V-Dem's 2026 data. Countries are classified according to their latest regime typology, with dots sized according to their ACP rank/score and a minimum size applied for visibility. V-Dem's original ranking table is available at https://www.v-dem.net.
                         
 **Notes:** 
 `+` indicates potential to belong to a higher category and `-` indicates potential for a lower category (eg. `EA+`)
@@ -310,7 +310,7 @@ st.divider()
 # --- PLOT C: Power Concentration ---
 st.subheader("C) ACP & Political Power Concentration")
 st.markdown("""
-The Power Concentration score (0–100) is a composite measure based on portfolio consolidation, multi-role leadership, and executive power density across governments. Data comes from the CIA World Factbook Archive project and is static, with the latest update dated July 2, 2026. The original analysis and further information are available at https://worldfactbookarchive.org/analysis/world-leaders/concentration.
+The Power Concentration score (0-100) is a composite measure based on portfolio consolidation, multi-role leadership, and executive power density across governments. Data comes from the CIA World Factbook Archive project and is static, with the latest update dated July 2, 2026. The original analysis and further information are available at https://worldfactbookarchive.org/analysis/world-leaders/concentration.
 
 Dot size represents the Power Concentration score, while colors indicate geopolitical regions. Countries with zero or null values are assigned a baseline dot size for visibility.
 """)
