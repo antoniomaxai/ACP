@@ -521,3 +521,91 @@ fig_f.update_layout(
 
 fig_f.add_vrect(x0=1.5, x1=2.5, fillcolor="#FDFD96", opacity=0.02, layer="below", line_width=0)
 st.plotly_chart(fig_f, use_container_width=True)
+
+
+st.divider()
+
+# --- PLOT G: Geopolitical AI Blocs (Pax Silica vs. WAICO) ---
+st.subheader("G) Geopolitical AI Blocs: Pax Silica vs. WAICO")
+st.markdown("""
+As AI capabilities consolidate, international technology governance is bifurcating into competing geopolitical alignment spheres. This plot maps membership across the US-anchored **[Pax Silica](https://en.wikipedia.org/wiki/Pax_Silica)** semiconductor/AI initiative, the China-led **World Artificial Intelligence Cooperation Organization ([WAICO](https://en.wikipedia.org/wiki/World_Artificial_Intelligence_Cooperation_Organization))**, and nations maintaining dual or non-aligned status.
+""")
+
+# Parse Pax Silica (KPIs-P_1) and WAICO (KPIs-P_2) booleans safely
+p1_is_true = df["KPIs-P_1"].astype(str).str.strip().str.upper() == "TRUE"
+p2_is_true = df["KPIs-P_2"].astype(str).str.strip().str.upper() == "TRUE"
+
+# Define alignment categories
+def assign_bloc(p1, p2):
+    if p1 and p2:
+        return "Pax Silica & WAICO (Dual)"
+    elif p1:
+        return "Pax Silica Member"
+    elif p2:
+        return "WAICO Member"
+    else:
+        return "Non-Aligned / Neither"
+
+df["Bloc_Status"] = [assign_bloc(p1, p2) for p1, p2 in zip(p1_is_true, p2_is_true)]
+
+# Size logic: 'Score' for treaty members, baseline size 2 for "Non-Aligned / Neither"
+df["PlotG_Size"] = np.where(df["Bloc_Status"] == "Non-Aligned / Neither", 2.5, df["Score"] * 1.05)
+
+# Set labels directly from KPIs-P_3 (show label if non-empty string)
+df["PlotG_Label"] = df["KPIs-P_3"].fillna("").astype(str).replace(["nan", "None", "NaN"], "").str.strip()
+
+# Render Plot G using Plot A's regional strip-plot layout (PlotA_X, PlotA_Y)
+fig_g = px.scatter(
+    df, 
+    x="PlotA_X", 
+    y="PlotA_Y", 
+    size="PlotG_Size",
+    color="Bloc_Status",
+    hover_name="Country",
+    text="PlotG_Label",
+    custom_data=["Region", "Classification", "Score", "Bloc_Status"],
+    color_discrete_map={
+        "Pax Silica Member": "#1f77b4",        # Pax Silica Blue
+        "WAICO Member": "#d62728",             # WAICO Red
+        "Pax Silica & WAICO (Dual)": "#f1c40f", # Dual Yellow
+        "Non-Aligned / Neither": "#555555"      # Neither Gray
+    },
+    category_orders={"Bloc_Status": [
+        "Pax Silica Member",
+        "WAICO Member",
+        "Pax Silica & WAICO (Dual)",
+        "Non-Aligned / Neither"
+    ]},
+    size_max=27
+)
+
+fig_g.update_traces(
+    marker=dict(opacity=0.85, line=dict(width=0.5, color='DarkSlateGrey')),
+    textposition='top center',
+    textfont=dict(size=10, color='Gray'),
+    hovertemplate="<b>%{hovertext}</b><br>Alignment: %{customdata[3]}<br>Region: %{customdata[0]}<br>%{customdata[1]}<br>Score: %{customdata[2]:.2f}<extra></extra>"
+)
+
+fig_g.update_layout(
+    xaxis_title="", 
+    yaxis_title="",
+    height=700,
+    xaxis=dict(
+        tickmode='array',
+        tickvals=[1, 2, 3],
+        ticktext=["Core AI Countries", "Semi-Periphery AI Countries", "Periphery AI Countries"],
+        showgrid=False
+    ),
+    yaxis=dict(
+        tickmode='array',
+        tickvals=list(region_mapping.values()),
+        ticktext=list(region_mapping.keys()),
+        showgrid=True,
+        zeroline=False
+    ),
+    showlegend=True,
+    legend_title_text="Geopolitical Alignment"
+)
+
+fig_g.add_vrect(x0=1.5, x1=2.5, fillcolor="#FDFD96", opacity=0.02, layer="below", line_width=0)
+st.plotly_chart(fig_g, use_container_width=True)
